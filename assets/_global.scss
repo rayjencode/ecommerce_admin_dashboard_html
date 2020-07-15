@@ -1,0 +1,40 @@
+html {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $mainBG;
+    min-height: calc(100vh - 100px);
+    width: 100%;
+    color: $text200;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $text200;
+}
+
+hr {
+    background: $gray200;
+    border: none;
+    height: 1px;
+}
+
+a {
+    text-decoration: none;
+}

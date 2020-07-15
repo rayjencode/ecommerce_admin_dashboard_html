@@ -1,0 +1,78 @@
+nav {
+    /* margin-top: 3.5rem; */
+    /* position: fixed; */
+    width: 100%;
+    height: 100%;
+    /* border-right: 1.3px solid var(--border);  */
+}
+.nav {
+    &__close {
+        top: 13px;
+        right: 13px;
+        font-size: 2rem;
+        cursor: pointer;
+        color: $danger;
+        display: none;
+    }
+    &__list {
+        margin-top: 2.1rem;
+        font-size: 15px;
+        list-style: none;
+        line-height: 2.4rem;
+        padding-left: 2rem;
+    }
+    &__item {
+        margin-right: 10px;
+    }
+    &__link {
+        text-decoration: none;
+        color: $text100;
+        font-weight: 500;
+        display: block;
+        position: relative;
+    }
+    &__link--icon {
+        font-size: 1.1rem;
+        color: $text300;
+    }
+    &__link--span--icon {
+        position: absolute;
+    }
+    &__link--span--navname {
+        padding-left: 2.4rem;
+    }
+    &__link:hover,
+    &__item:hover {
+        background: $gray100;
+        border-radius: 4px;
+    }
+}
+
+.navWrapper {
+    margin-top: 3.9rem;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    border-right: 1.3px solid $border;
+}
+
+.sub__nav--list {
+    display: none;
+    list-style: none;
+    padding-left: 2.4rem;
+}
+.sub__nav--item {
+    margin-right: 10px;
+}
+
+.sub__nav--link {
+    text-decoration: none;
+    color: $text300;
+    display: block;
+}
+
+.sub__nav--link:hover,
+.sub__nav--item:hover {
+    background: $gray100;
+    border-radius: 4px;
+}

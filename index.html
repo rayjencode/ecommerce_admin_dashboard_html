@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Fontawesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        />
+        <link rel="stylesheet" href="/assets/style.css" />
+        <title>Great Web Admin</title>
+    </head>
+    <body>
+        <header class="header">
+            <div
+                class="header__logo dflex px-2 justify-content-start align-items-center"
+            >
+                <i class="header__collapse--btn fas fa-align-left"></i>
+                <img
+                    class="header__logo__img"
+                    src="./assets/logo.png"
+                    alt="greatweb"
+                />
+            </div>
+            <div
+                class="header__search px-1 dflex justify-content-start align-items-center"
+            >
+                <i class="header__search--icon fas fa-search"></i>
+                <input
+                    class="header__search__input"
+                    type="text"
+                    placeholder="Search"
+                />
+            </div>
+            <div
+                class="header__profile mx-3 dflex justify-content-start align-items-center"
+            >
+                <div class="header__profile__imgWrapper mr-1">
+                    <img
+                        class="header__profile__img"
+                        src="./assets/avatar.jpg"
+                        alt=""
+                    />
+                </div>
+                <p class="header__profile__name text-white text-bold-500">
+                    Raymond Sacramento
+                </p>
+            </div>
+        </header>
+
+        <nav class="nav">
+            <div class="navWrapper relative">
+                <span class="nav__close absolute">
+                    <i class="fas fa-window-close"></i>
+                </span>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">
+                            <span class="nav__link--span--icon"
+                                ><i class="fas fa-home nav__link--icon"> </i
+                            ></span>
+                            <span class="nav__link--span--navname">
+                                Home
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">
+                            <span class="nav__link--span--icon"
+                                ><i class="fas fa-shopping-bag nav__link--icon">
+                                </i
+                            ></span>
+                            <span class="nav__link--span--navname">
+                                Orders
+                            </span>
+                        </a>
+                    </li>
+
+                    <ul class="sub__nav--list">
+                        <li class="sub__nav--item">
+                            <a class="sub__nav--link" href="#"> Orders</a>
+                        </li>
+                        <li class="sub__nav--item">
+                            <a class="sub__nav--link" href="#"
+                                >Abandoned Checkouts</a
+                            >
+                        </li>
+                    </ul>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">
+                            <span class="nav__link--span--icon"
+                                ><i class="fas fa-tags nav__link--icon"> </i
+                            ></span>
+                            <span class="nav__link--span--navname">
+                                Products
+                            </span>
+                        </a>
+                    </li>
+                    <ul class="sub__nav--list">
+                        <li class="sub__nav--item">
+                            <a class="sub__nav--link" href="#">All products</a>
+                        </li>
+                        <li class="sub__nav--item">
+                            <a class="sub__nav--link" href="#">Category</a>
+                        </li>
+                        <li class="sub__nav--item">
+                            <a class="sub__nav--link" href="#">Collection</a>
+                        </li>
+                    </ul>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">
+                            <span class="nav__link--span--icon"
+                                ><i class="fas fa-user nav__link--icon"> </i
+                            ></span>
+                            <span class="nav__link--span--navname">
+                                Customers
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">
+                            <span class="nav__link--span--icon"
+                                ><i
+                                    class="fas fa-file-invoice-dollar nav__link--icon"
+                                >
+                                </i
+                            ></span>
+                            <span class="nav__link--span--navname">
+                                Discounts
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="main">
+            <div class="main__sideNav"></div>
+            <div class="main__content">
+                <!-- Home Page -->
+                <div class="home">
+                    <h2 class="my-3">Overview Dashboard</h2>
+
+                    <!-- TOP CARDS -->
+                    <div class="home__cards">
+                        <div class="home__cards--item px-2 py-2 card">
+                            <p class="home__cards--title">Total Sales</p>
+                            <p class="home__cards--count">&#8369;1,110.00</p>
+                            <hr />
+                            <div class="home__cards--view">
+                                <a href="#">View Reports</a>
+                            </div>
+                        </div>
+                        <div class="home__cards--item px-2 py-2 card">
+                            <p class="home__cards--title">Total Orders</p>
+                            <p class="home__cards--count">422</p>
+                            <hr />
+                            <div class="home__cards--view">
+                                <a href="#">View Reports</a>
+                            </div>
+                        </div>
+                        <div class="home__cards--item px-2 py-2 card">
+                            <p class="home__cards--title">Total Customers</p>
+                            <p class="home__cards--count">153</p>
+                            <hr />
+                            <div class="home__cards--view">
+                                <a href="#">View Reports</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FULLFILL ORDERS-->
+                    <div class="home__table card px-3 py-2 my-3">
+                        <div
+                            class="dflex justify-content-between align-items-center"
+                        >
+                            <p class="home__table--title">
+                                <i class="fas fa-cart-arrow-down mr-1"></i
+                                ><strong>16 Orders</strong> to Fullfill
+                            </p>
+                            <span>
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </div>
+
+                        <div class="home__table--heading my-2">
+                            <p class="home__table--heading--col1">Date</p>
+                            <p class="home__table--heading--col2">
+                                Address
+                            </p>
+                            <p class="home__table--heading--col3">Qty</p>
+                            <p class="home__table--heading--col4">Total</p>
+                        </div>
+                        <hr />
+                        <div class="home__table--items py-1">
+                            <p class="home__table--items--col1">
+                                <strong>5 JUL 20</strong>
+                                <span>3:37pm</span>
+                            </p>
+                            <p class="home__table--items--col2">
+                                #005 Apple St. General Santos City
+                            </p>
+                            <p class="home__table--items--col3">12</p>
+                            <p class="home__table--items--col4">
+                                &#8369; 13,500
+                            </p>
+                        </div>
+                        <hr />
+                        <div class="home__table--items py-1">
+                            <p class="home__table--items--col1">
+                                <strong>1 MAY 20</strong>
+                                <span>6:17am</span>
+                            </p>
+                            <p class="home__table--items--col2">
+                                #21 Eastwood St.Bonifacio Taguig City
+                            </p>
+                            <p class="home__table--items--col3">3</p>
+                            <p class="home__table--items--col4">
+                                &#8369; 4,700
+                            </p>
+                        </div>
+                        <hr />
+                        <div class="home__table--items py-1">
+                            <p class="home__table--items--col1">
+                                <strong>21 AUG 19</strong>
+                                <span>2:50pm</span>
+                            </p>
+                            <p class="home__table--items--col2">
+                                #333 Silang St. Quezon City
+                            </p>
+                            <p class="home__table--items--col3">5</p>
+                            <p class="home__table--items--col4">
+                                &#8369; 9,100
+                            </p>
+                        </div>
+                        <hr />
+                        <div class="home__cards--view">
+                            <a href="#">View All</a>
+                        </div>
+                    </div>
+
+                    <!-- UNPAID ORDERS -->
+                    <div class="home__table card px-3 py-2 my-3">
+                        <div
+                            class="dflex justify-content-between align-items-center"
+                        >
+                            <p class="home__table--title">
+                                <i class="fas fa-money-check-alt mr-1"></i>
+                                <strong>7 Unpaid Orders</strong>
+                            </p>
+                            <span>
+                                <i class="fas fa-angle-down"></i>
+                            </span>
+                        </div>
+
+                        <div class="home__table--heading my-2">
+                            <p class="home__table--heading--col1">Order#</p>
+                            <p class="home__table--heading--col2">
+                                Email
+                            </p>
+                            <p class="home__table--heading--col3">Type</p>
+                            <p class="home__table--heading--col4">Total</p>
+                        </div>
+                        <hr />
+                        <div class="home__table--items py-1">
+                            <p class="home__table--items--col1">
+                                #9321303
+                            </p>
+                            <p class="home__table--items--col2">
+                                rayjenscode@gmail.com
+                            </p>
+                            <p class="home__table--items--col3">COD</p>
+                            <p class="home__table--items--col4">
+                                &#8369; 950
+                            </p>
+                        </div>
+                        <hr />
+                        <div class="home__table--items py-1">
+                            <p class="home__table--items--col1">
+                                #5462315
+                            </p>
+                            <p class="home__table--items--col2">
+                                andysmith@gmail.com
+                            </p>
+                            <p class="home__table--items--col3">COD</p>
+                            <p class="home__table--items--col4">
+                                &#8369; 36,897
+                            </p>
+                        </div>
+                        <hr />
+                        <div class="home__table--items py-1">
+                            <p class="home__table--items--col1">
+                                #7898646
+                            </p>
+                            <p class="home__table--items--col2">
+                                angelbytheway@yahoo.com
+                            </p>
+                            <p class="home__table--items--col3">Pickup</p>
+                            <p class="home__table--items--col4">
+                                &#8369; 14,987
+                            </p>
+                        </div>
+                        <hr />
+                        <div class="home__cards--view">
+                            <a href="#">View All</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
