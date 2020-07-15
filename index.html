@@ -24,7 +24,7 @@
                 />
             </div>
             <div
-                class="header__search px-1 dflex justify-content-start align-items-center"
+                class="header__search px-1 mr-1 dflex justify-content-start align-items-center"
             >
                 <i class="header__search--icon fas fa-search"></i>
                 <input
@@ -34,7 +34,7 @@
                 />
             </div>
             <div
-                class="header__profile mx-3 dflex justify-content-start align-items-center"
+                class="header__profile px-1 mx-3 dflex justify-content-start align-items-center"
             >
                 <div class="header__profile__imgWrapper mr-1">
                     <img
@@ -43,9 +43,34 @@
                         alt=""
                     />
                 </div>
-                <p class="header__profile__name text-white text-bold-500">
-                    Raymond Sacramento
+                <p
+                    class="header__profile__name text-white text-bold-500 relative"
+                >
+                    Zander Ford
                 </p>
+
+                <span class="header__profile__name--nav absolute">
+                    <span class="header__profile__name--nav--pointer absolute">
+                        <i class="fas fa-sort-up"></i>
+                    </span>
+                    <ul class="header__profile__name--nav--list">
+                        <li class="header__profile__name--nav--item">
+                            <a class="header__profile__name--nav--link" href="#"
+                                >Profile</a
+                            >
+                        </li>
+                        <li class="header__profile__name--nav--item">
+                            <a class="header__profile__name--nav--link" href="#"
+                                >Message</a
+                            >
+                        </li>
+                        <li class="header__profile__name--nav--item">
+                            <a class="header__profile__name--nav--link" href="#"
+                                >Logout</a
+                            >
+                        </li>
+                    </ul>
+                </span>
             </div>
         </header>
 
@@ -56,7 +81,7 @@
                 </span>
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a class="nav__link" href="#">
+                        <a class="nav__link nav__active" href="#">
                             <span class="nav__link--span--icon"
                                 ><i class="fas fa-home nav__link--icon"> </i
                             ></span>
@@ -65,7 +90,7 @@
                             </span>
                         </a>
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item nav__showOrders">
                         <a class="nav__link" href="#">
                             <span class="nav__link--span--icon"
                                 ><i class="fas fa-shopping-bag nav__link--icon">
@@ -77,7 +102,7 @@
                         </a>
                     </li>
 
-                    <ul class="sub__nav--list">
+                    <ul class="sub__nav--list nav__orders--items">
                         <li class="sub__nav--item">
                             <a class="sub__nav--link" href="#"> Orders</a>
                         </li>
@@ -87,7 +112,7 @@
                             >
                         </li>
                     </ul>
-                    <li class="nav__item">
+                    <li class="nav__item nav__showProducts">
                         <a class="nav__link" href="#">
                             <span class="nav__link--span--icon"
                                 ><i class="fas fa-tags nav__link--icon"> </i
@@ -97,7 +122,7 @@
                             </span>
                         </a>
                     </li>
-                    <ul class="sub__nav--list">
+                    <ul class="sub__nav--list nav__products--items">
                         <li class="sub__nav--item">
                             <a class="sub__nav--link" href="#">All products</a>
                         </li>
@@ -131,6 +156,16 @@
                             </span>
                         </a>
                     </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">
+                            <span class="nav__link--span--icon"
+                                ><i class="fas fa-cog nav__link--icon"> </i
+                            ></span>
+                            <span class="nav__link--span--navname">
+                                Settings
+                            </span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -146,7 +181,7 @@
                     <div class="home__cards">
                         <div class="home__cards--item px-2 py-2 card">
                             <p class="home__cards--title">Total Sales</p>
-                            <p class="home__cards--count">&#8369;1,110.00</p>
+                            <p class="home__cards--count">&#8369;108,110.00</p>
                             <hr />
                             <div class="home__cards--view">
                                 <a href="#">View Reports</a>
@@ -180,7 +215,9 @@
                                 ><strong>16 Orders</strong> to Fullfill
                             </p>
                             <span>
-                                <i class="fas fa-angle-down"></i>
+                                <i
+                                    class="fas fa-angle-down home__table--toggleBtn"
+                                ></i>
                             </span>
                         </div>
 
@@ -250,7 +287,9 @@
                                 <strong>7 Unpaid Orders</strong>
                             </p>
                             <span>
-                                <i class="fas fa-angle-down"></i>
+                                <i
+                                    class="fas fa-angle-down home__table--toggleBtn"
+                                ></i>
                             </span>
                         </div>
 

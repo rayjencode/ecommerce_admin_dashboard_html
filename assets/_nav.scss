@@ -57,7 +57,7 @@ nav {
 }
 
 .sub__nav--list {
-    display: none;
+    // display: none;
     list-style: none;
     padding-left: 2.4rem;
 }
@@ -73,6 +73,28 @@ nav {
 
 .sub__nav--link:hover,
 .sub__nav--item:hover {
+    background: $gray100;
+    border-radius: 4px;
+}
+
+// .sub__nav--link:link,
+// .sub__nav--link:visited,
+// .sub__nav--link:active,
+.sub__nav--item:link,
+.sub__nav--item:visited,
+.sub__nav--link:active {
+    background: $gray100;
+    border-radius: 4px;
+}
+
+.nav__orders--items {
+    display: none;
+}
+.nav__products--items {
+    display: none;
+}
+
+.nav__active {
     background: $gray100;
     border-radius: 4px;
 }
