@@ -17,6 +17,9 @@
     align-items: center;
 }
 
+.list-unstyled {
+    list-style: none;
+}
 .card {
     border: 1px solid $border;
     box-shadow: $box-shadow;
@@ -179,10 +182,101 @@
     padding-bottom: 50px;
 }
 
+.pr-1 {
+    padding-right: 10px;
+}
+.pr-2 {
+    padding-right: 20px;
+}
+.pr-3 {
+    padding-right: 30px;
+}
+.pr-4 {
+    padding-right: 40px;
+}
+.pr-5 {
+    padding-right: 50px;
+}
+
+.pl-1 {
+    padding-left: 10px;
+}
+.pl-2 {
+    padding-left: 20px;
+}
+.pl-3 {
+    padding-left: 30px;
+}
+.pl-4 {
+    padding-left: 40px;
+}
+.pl-5 {
+    padding-left: 50px;
+}
+
 .w-100 {
     width: 100%;
 }
 
 .w-50 {
     width: 50%;
+}
+
+.border-none {
+    border: none;
+}
+
+// Text Color
+
+.text-gray {
+    color: $gray;
+}
+.text-warning {
+    color: $warning;
+}
+.text-secondary {
+    color: $secondary;
+}
+.text-success {
+    color: $success;
+}
+.text-danger {
+    color: $danger;
+}
+
+// Badges
+.badge-paid {
+    background: $secondary;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+.badge-pending {
+    background: $warning;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+.badge-abandoned {
+    background: $gray;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+// Indicator
+.indicator-not-processed {
+    color: $gray;
+}
+.indicator-processed {
+    color: $warning;
+}
+.indicator-shipped {
+    color: $secondary;
+}
+.indicator-completed {
+    color: $success;
+}
+.indicator-refunded {
+    color: $danger;
 }

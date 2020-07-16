@@ -48,31 +48,33 @@
                 >
                     Zander Ford
                 </p>
-
-                <span class="header__profile__name--nav absolute">
-                    <span class="header__profile__name--nav--pointer absolute">
-                        <i class="fas fa-sort-up"></i>
-                    </span>
-                    <ul class="header__profile__name--nav--list">
-                        <li class="header__profile__name--nav--item">
-                            <a class="header__profile__name--nav--link" href="#"
-                                >Profile</a
-                            >
-                        </li>
-                        <li class="header__profile__name--nav--item">
-                            <a class="header__profile__name--nav--link" href="#"
-                                >Message</a
-                            >
-                        </li>
-                        <li class="header__profile__name--nav--item">
-                            <a class="header__profile__name--nav--link" href="#"
-                                >Logout</a
-                            >
-                        </li>
-                    </ul>
-                </span>
             </div>
         </header>
+
+        <div>
+            <span class="header__profile__name--nav absolute">
+                <span class="header__profile__name--nav--pointer absolute">
+                    <i class="fas fa-sort-up"></i>
+                </span>
+                <ul class="header__profile__name--nav--list">
+                    <li class="header__profile__name--nav--item">
+                        <a class="header__profile__name--nav--link" href="#"
+                            >Profile</a
+                        >
+                    </li>
+                    <li class="header__profile__name--nav--item">
+                        <a class="header__profile__name--nav--link" href="#"
+                            >Message</a
+                        >
+                    </li>
+                    <li class="header__profile__name--nav--item">
+                        <a class="header__profile__name--nav--link" href="#"
+                            >Logout</a
+                        >
+                    </li>
+                </ul>
+            </span>
+        </div>
 
         <nav class="nav">
             <div class="navWrapper relative">
@@ -174,7 +176,7 @@
             <div class="main__sideNav"></div>
             <div class="main__content">
                 <!-- Home Page -->
-                <div class="home">
+                <div class="home hide-item">
                     <h2 class="my-3">Overview Dashboard</h2>
 
                     <!-- TOP CARDS -->
@@ -205,7 +207,7 @@
                         </div>
                     </div>
 
-                    <!-- FULLFILL ORDERS-->
+                    <!-- FULFILL ORDERS-->
                     <div class="home__table card px-3 py-2 my-3">
                         <div
                             class="dflex justify-content-between align-items-center"
@@ -344,6 +346,387 @@
                         <div class="home__cards--view">
                             <a href="#">View All</a>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Orders Page -->
+                <div class="orders">
+                    <h2 class="my-3">Orders</h2>
+                    <div class="orders__table card px-3 py-2 my-3">
+                        <div class="orders__table--filter mb-2">
+                            <ul
+                                class="orders__table--filter--list list-unstyled dflex justify-content-start"
+                            >
+                                <li>
+                                    <p
+                                        class="orders__table--filter--link orders__table--filter--link--active"
+                                    >
+                                        All
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="orders__table--filter--link">
+                                        Paid
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="orders__table--filter--link">
+                                        Unpaid
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="orders__table--filter--link">
+                                        Pending
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="orders__table--filter--link">
+                                        Not Processed
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="orders__table--filter--link">
+                                        Shipped
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="orders__table--filter--link">
+                                        Completed
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr />
+                        <div class="orders__table--search my-3">
+                            <div class="relative">
+                                <select
+                                    class="orders__table--search--select py-1 px-2"
+                                    name=""
+                                    id=""
+                                >
+                                    <option value="">Filter</option>
+                                    <option value="">This Month</option>
+                                    <option value="">Last Month</option>
+                                    <option value="">Last 3 Months</option>
+                                    <option value="">This Year</option>
+                                    <option value="">Last Year</option>
+                                </select>
+                                <span
+                                    class="orders__table--search--select--arrow absolute"
+                                >
+                                    <i class="fas fa-caret-down"></i>
+                                </span>
+                            </div>
+                            <div class="relative">
+                                <i
+                                    class="orders__table--search--input--icon fas fa-search absolute"
+                                ></i>
+                                <input
+                                    class="orders__table--search--input py-1 pl-4 pr-2"
+                                    type="text"
+                                    placeholder="Search orders"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="orders__table--heading my-2">
+                            <p class="orders__table--heading--col1">Order</p>
+                            <p class="orders__table--heading--col2">
+                                Date
+                            </p>
+                            <p class="orders__table--heading--col3">Customer</p>
+                            <p class="orders__table--heading--col4">
+                                Payment
+                            </p>
+                            <p class="orders__table--heading--col5">
+                                Fulfillment
+                            </p>
+                            <p class="orders__table--heading--col6">
+                                <i class="fas fa-toggle-on"></i>
+                            </p>
+                            <p class="orders__table--heading--col7">Total</p>
+                        </div>
+                        <hr />
+
+                        <!-- Order 1 -->
+                        <div class="orders__table--items py-1">
+                            <a
+                                href="#"
+                                class="orders__table--items--col1 orders__table--items--transactionId"
+                                >#093654</a
+                            >
+                            <p class="orders__table--items--col2">
+                                Jan 18, 9:31am
+                            </p>
+                            <p class="orders__table--items--col3">
+                                Jonathan Yu
+                            </p>
+                            <p class="orders__table--items--col4">
+                                <span class="badge-paid px-1">
+                                    Paid
+                                </span>
+                            </p>
+                            <p class="orders__table--items--col5">
+                                Completed
+                            </p>
+                            <p class="orders__table--items--col6">
+                                <i
+                                    class="orders__table--items--indicator indicator-completed fas fa-circle"
+                                ></i>
+                            </p>
+                            <p class="orders__table--items--col7">
+                                &#8369; 16,943
+                            </p>
+                        </div>
+                        <hr />
+                        <!-- Order 2 -->
+                        <div class="orders__table--items py-1">
+                            <a
+                                href="#"
+                                class="orders__table--items--col1 orders__table--items--transactionId"
+                                >#093654</a
+                            >
+                            <p class="orders__table--items--col2">
+                                Jan 18, 9:31am
+                            </p>
+                            <p class="orders__table--items--col3">
+                                Jonathan Yu
+                            </p>
+                            <p class="orders__table--items--col4">
+                                <span class="badge-pending px-1">
+                                    Pending
+                                </span>
+                            </p>
+                            <p class="orders__table--items--col5">
+                                Shipped
+                            </p>
+                            <p class="orders__table--items--col6">
+                                <i
+                                    class="orders__table--items--indicator indicator-shipped fas fa-circle"
+                                ></i>
+                            </p>
+                            <p class="orders__table--items--col7">
+                                &#8369; 16,943
+                            </p>
+                        </div>
+                        <hr />
+                        <!-- Order 3 -->
+                        <div class="orders__table--items py-1">
+                            <a
+                                href="#"
+                                class="orders__table--items--col1 orders__table--items--transactionId"
+                                >#093654</a
+                            >
+                            <p class="orders__table--items--col2">
+                                Jan 18, 9:31am
+                            </p>
+                            <p class="orders__table--items--col3">
+                                Jonathan Yu
+                            </p>
+                            <p class="orders__table--items--col4">
+                                <span class="badge-abandoned px-1">
+                                    Abandoned
+                                </span>
+                            </p>
+                            <p class="orders__table--items--col5">
+                                Processed
+                            </p>
+                            <p class="orders__table--items--col6">
+                                <i
+                                    class="orders__table--items--indicator indicator-processed fas fa-circle"
+                                ></i>
+                            </p>
+                            <p class="orders__table--items--col7">
+                                &#8369; 16,943
+                            </p>
+                        </div>
+                        <hr />
+                        <!-- Order 4 -->
+                        <div class="orders__table--items py-1">
+                            <a
+                                href="#"
+                                class="orders__table--items--col1 orders__table--items--transactionId"
+                                >#093654</a
+                            >
+                            <p class="orders__table--items--col2">
+                                Jan 18, 9:31am
+                            </p>
+                            <p class="orders__table--items--col3">
+                                Jonathan Yu
+                            </p>
+                            <p class="orders__table--items--col4">
+                                <span class="badge-abandoned px-1">
+                                    Abandoned
+                                </span>
+                            </p>
+                            <p class="orders__table--items--col5">
+                                Not Processed
+                            </p>
+                            <p class="orders__table--items--col6">
+                                <i
+                                    class="orders__table--items--indicator indicator-not-processed fas fa-circle"
+                                ></i>
+                            </p>
+                            <p class="orders__table--items--col7">
+                                &#8369; 16,943
+                            </p>
+                        </div>
+                        <hr />
+                        <!-- Order 5 -->
+                        <div class="orders__table--items py-1">
+                            <a
+                                href="#"
+                                class="orders__table--items--col1 orders__table--items--transactionId"
+                                >#093654</a
+                            >
+                            <p class="orders__table--items--col2">
+                                Jan 18, 9:31am
+                            </p>
+                            <p class="orders__table--items--col3">
+                                Jonathan Yu
+                            </p>
+                            <p class="orders__table--items--col4">
+                                <span class="badge-abandoned px-1">
+                                    Abandoned
+                                </span>
+                            </p>
+                            <p class="orders__table--items--col5">
+                                Refunded
+                            </p>
+                            <p class="orders__table--items--col6">
+                                <i
+                                    class="orders__table--items--indicator indicator-refunded fas fa-circle"
+                                ></i>
+                            </p>
+                            <p class="orders__table--items--col7">
+                                &#8369; 16,943
+                            </p>
+                        </div>
+                        <hr />
+                        <!-- Order 6 -->
+                        <div class="orders__table--items py-1">
+                            <a
+                                href="#"
+                                class="orders__table--items--col1 orders__table--items--transactionId"
+                                >#093654</a
+                            >
+                            <p class="orders__table--items--col2">
+                                Jan 18, 9:31am
+                            </p>
+                            <p class="orders__table--items--col3">
+                                Jonathan Yu
+                            </p>
+                            <p class="orders__table--items--col4">
+                                <span class="badge-paid px-1">
+                                    Paid
+                                </span>
+                            </p>
+                            <p class="orders__table--items--col5">
+                                Completed
+                            </p>
+                            <p class="orders__table--items--col6">
+                                <i
+                                    class="orders__table--items--indicator indicator-completed fas fa-circle"
+                                ></i>
+                            </p>
+                            <p class="orders__table--items--col7">
+                                &#8369; 16,943
+                            </p>
+                        </div>
+                        <hr />
+                        <!-- Order 7 -->
+                        <div class="orders__table--items py-1">
+                            <a
+                                href="#"
+                                class="orders__table--items--col1 orders__table--items--transactionId"
+                                >#093654</a
+                            >
+                            <p class="orders__table--items--col2">
+                                Jan 18, 9:31am
+                            </p>
+                            <p class="orders__table--items--col3">
+                                Jonathan Yu
+                            </p>
+                            <p class="orders__table--items--col4">
+                                <span class="badge-paid px-1">
+                                    Paid
+                                </span>
+                            </p>
+                            <p class="orders__table--items--col5">
+                                Shipped
+                            </p>
+                            <p class="orders__table--items--col6">
+                                <i
+                                    class="orders__table--items--indicator indicator-shipped fas fa-circle"
+                                ></i>
+                            </p>
+                            <p class="orders__table--items--col7">
+                                &#8369; 16,943
+                            </p>
+                        </div>
+                        <hr />
+                        <!-- Order 8 -->
+                        <div class="orders__table--items py-1">
+                            <a
+                                href="#"
+                                class="orders__table--items--col1 orders__table--items--transactionId"
+                                >#093654</a
+                            >
+                            <p class="orders__table--items--col2">
+                                Jan 18, 9:31am
+                            </p>
+                            <p class="orders__table--items--col3">
+                                Jonathan Yu
+                            </p>
+                            <p class="orders__table--items--col4">
+                                <span class="badge-paid px-1">
+                                    Paid
+                                </span>
+                            </p>
+                            <p class="orders__table--items--col5">
+                                Not Processed
+                            </p>
+                            <p class="orders__table--items--col6">
+                                <i
+                                    class="orders__table--items--indicator indicator-not-processed fas fa-circle"
+                                ></i>
+                            </p>
+                            <p class="orders__table--items--col7">
+                                &#8369; 16,943
+                            </p>
+                        </div>
+                        <hr />
+                        <!-- Order 9 -->
+                        <div class="orders__table--items py-1">
+                            <a
+                                href="#"
+                                class="orders__table--items--col1 orders__table--items--transactionId"
+                                >#093654</a
+                            >
+                            <p class="orders__table--items--col2">
+                                Jan 18, 9:31am
+                            </p>
+                            <p class="orders__table--items--col3">
+                                Jonathan Yu
+                            </p>
+                            <p class="orders__table--items--col4">
+                                <span class="badge-paid px-1">
+                                    Paid
+                                </span>
+                            </p>
+                            <p class="orders__table--items--col5">
+                                Processed
+                            </p>
+                            <p class="orders__table--items--col6">
+                                <i
+                                    class="orders__table--items--indicator indicator-processed fas fa-circle"
+                                ></i>
+                            </p>
+                            <p class="orders__table--items--col7">
+                                &#8369; 16,943
+                            </p>
+                        </div>
+                        <hr />
                     </div>
                 </div>
             </div>
