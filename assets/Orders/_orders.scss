@@ -27,6 +27,9 @@
                     }
                 }
             }
+            &--collapseBtn {
+                display: none;
+            }
         }
         &--search {
             display: grid;
@@ -94,6 +97,10 @@
             &--transactionId {
                 color: $secondary;
                 font-weight: 500;
+            }
+            &:hover {
+                background: $gray100;
+                cursor: pointer;
             }
         }
     }

@@ -126,5 +126,43 @@
                 display: none;
             }
         }
+
+        &--filter {
+            &--listWrapper {
+                display: none;
+            }
+            &--collapseBtn {
+                display: block;
+                font-size: 1.3rem;
+                color: $gray;
+                cursor: pointer;
+            }
+            &--list {
+                margin-top: 1rem;
+                display: grid;
+                grid-template-columns: 1fr;
+
+                // grid-template-rows: repeat(8, 40px);
+            }
+            &--link {
+                padding: 0.6rem 0;
+                &:hover {
+                    background: $gray100;
+                    cursor: pointer;
+                    display: block;
+                    width: 100%;
+                    &::after {
+                        display: none;
+                    }
+                }
+                &--active {
+                    color: $secondary;
+                    font-weight: 500;
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }

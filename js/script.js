@@ -13,6 +13,14 @@ const navProductsList = document.querySelector('.nav__products--items');
 const toggleProfileNav = document.querySelector('.header__profile');
 const showProfileNav = document.querySelector('.header__profile__name--nav');
 
+// toggle orders filter
+const showOrderFilter = document.querySelector(
+    '.orders__table--filter--listWrapper'
+);
+const toggleShowOrderFilter = document.querySelector(
+    '.orders__table--filter--collapseBtn'
+);
+
 // Actions
 navBtn.addEventListener('click', () => {
     console.log(`object`);
@@ -35,4 +43,9 @@ showProducts.addEventListener('click', () => {
 
 toggleProfileNav.addEventListener('click', () => {
     showProfileNav.classList.toggle('show');
+});
+
+toggleShowOrderFilter.addEventListener('click', () => {
+    showOrderFilter.classList.toggle('show');
+    console.log(`filter`);
 });

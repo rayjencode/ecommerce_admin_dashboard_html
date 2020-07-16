@@ -670,7 +670,7 @@ nav {
 }
 
 .show {
-  display: block;
+  display: block !important;
 }
 
 .show-item {
@@ -780,6 +780,10 @@ nav {
   display: block;
 }
 
+.orders__table--filter--collapseBtn {
+  display: none;
+}
+
 .orders__table--search {
   display: -ms-grid;
   display: grid;
@@ -856,6 +860,11 @@ nav {
 .orders__table--items--transactionId {
   color: #006fbb;
   font-weight: 500;
+}
+
+.orders__table--items:hover {
+  background: #eeeeee;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -974,6 +983,41 @@ nav {
     display: none;
   }
   .orders__table--items--col5 {
+    display: none;
+  }
+  .orders__table--filter--listWrapper {
+    display: none;
+  }
+  .orders__table--filter--collapseBtn {
+    display: block;
+    font-size: 1.3rem;
+    color: #6a727a;
+    cursor: pointer;
+  }
+  .orders__table--filter--list {
+    margin-top: 1rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .orders__table--filter--link {
+    padding: 0.6rem 0;
+  }
+  .orders__table--filter--link:hover {
+    background: #eeeeee;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+  }
+  .orders__table--filter--link:hover::after {
+    display: none;
+  }
+  .orders__table--filter--link--active {
+    color: #006fbb;
+    font-weight: 500;
+  }
+  .orders__table--filter--link--active::after {
     display: none;
   }
 }
