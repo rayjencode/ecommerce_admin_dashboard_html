@@ -98,3 +98,29 @@ nav {
     background: $gray100;
     border-radius: 4px;
 }
+
+@media (max-width: 768px) {
+    nav {
+        margin-top: 0;
+        display: none;
+        position: fixed;
+        background: rgba(83, 83, 83, 0.404);
+        transition: 0.4s ease;
+        z-index: 9999;
+    }
+    .nav {
+        &__close {
+            display: block;
+        }
+    }
+
+    .navWrapper {
+        margin-top: -4px;
+        width: 350px;
+        padding-top: 1.5rem;
+        background: $mainBG;
+        transition: 0.4s ease;
+    }
+}
+@media (max-width: 600px) {
+}

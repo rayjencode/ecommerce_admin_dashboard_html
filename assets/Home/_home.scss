@@ -51,3 +51,30 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 600px) {
+    .home {
+        &__table {
+            &--heading {
+                grid-template-columns: 1fr 1fr 1fr;
+                &--col2 {
+                    display: none;
+                }
+            }
+            &--items {
+                grid-template-columns: 1fr 1fr 1fr;
+                &--col2 {
+                    display: none;
+                }
+                &--col1 {
+                    span:nth-last-child(1) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -28,3 +28,21 @@ main {
         margin-top: 2rem;
     }
 }
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    .main {
+        &__content {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        &__sideNav {
+            margin: 0;
+        }
+        &__search {
+            max-width: 91%;
+        }
+    }
+}
