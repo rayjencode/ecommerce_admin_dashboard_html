@@ -387,6 +387,7 @@ header {
   width: 100vw;
   -webkit-transition: ease-in-out;
   transition: ease-in-out;
+  z-index: 1;
 }
 
 .header__collapse--btn {
@@ -652,6 +653,7 @@ nav {
   /* position: fixed; */
   width: 100%;
   height: 100%;
+  z-index: 1;
   /* border-right: 1.3px solid var(--border);  */
 }
 
@@ -970,21 +972,9 @@ nav {
     -ms-grid-columns: (80px, 1fr)[auto-fit];
         grid-template-columns: repeat(auto-fit, 80px, 1fr);
   }
-  .table--heading--col4 {
-    display: none;
-  }
-  .table--heading--col5 {
-    display: none;
-  }
   .table--items {
     -ms-grid-columns: (80px, 1fr)[auto-fit];
         grid-template-columns: repeat(auto-fit, 80px, 1fr);
-  }
-  .table--items--col4 {
-    display: none;
-  }
-  .table--items--col5 {
-    display: none;
   }
   .table--filter--listWrapper {
     display: none;
@@ -1103,6 +1093,78 @@ nav {
   }
   .home__table--items--col1 span:nth-last-child(1) {
     display: none;
+  }
+}
+
+.singleOrder {
+  max-width: 968px;
+  margin: 0 auto;
+}
+
+.singleOrder__cardWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 250px;
+      grid-template-columns: 1fr 250px;
+  grid-gap: 20px;
+}
+
+.singleOrder__main--card {
+  background: white;
+}
+
+.singleOrder__main--card--item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 85px 1fr;
+      grid-template-columns: 85px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.singleOrder__main--card--item:hover {
+  cursor: pointer;
+}
+
+.singleOrder__main--card--item--imgWrapper {
+  width: 60px;
+  position: relative;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.singleOrder__main--card--item--img {
+  width: 100%;
+}
+
+.singleOrder__main--card--item--countWrapper {
+  top: -13px;
+  right: -13px;
+  position: absolute;
+  color: white;
+  background: #006fbb;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 3px;
+}
+
+@media (max-width: 768px) {
+  .singleOrder__cardWrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .singleOrder__main--card--item {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .singleOrder__main--card--item--details {
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

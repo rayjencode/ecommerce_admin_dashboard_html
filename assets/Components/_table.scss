@@ -48,9 +48,6 @@
             border-bottom: 1px solid $border;
             border-top-left-radius: 3px;
             border-bottom-left-radius: 3px;
-            // background: $gray100;
-            // border: 1px solid $gray200;
-            // border-radius: 3px;
             &:hover {
                 cursor: pointer;
             }
@@ -71,12 +68,9 @@
             width: 100%;
             border: none;
             color: $text200;
-            // font-size: 14px;
             border-top: 1px solid $border;
             border-right: 1px solid $border;
             border-bottom: 1px solid $border;
-            // border: 1px solid $gray200;
-            // border-radius: 3px;
             border-top-right-radius: 3px;
             border-bottom-right-radius: 3px;
             &::placeholder {
@@ -132,22 +126,10 @@
         &--heading {
             // grid-template-columns: repeat(5, 1fr);
             grid-template-columns: repeat(auto-fit, (80px, 1fr));
-            &--col4 {
-                display: none;
-            }
-            &--col5 {
-                display: none;
-            }
         }
         &--items {
             // grid-template-columns: repeat(5, 1fr);
             grid-template-columns: repeat(auto-fit, (80px, 1fr));
-            &--col4 {
-                display: none;
-            }
-            &--col5 {
-                display: none;
-            }
         }
 
         &--filter {
@@ -164,8 +146,6 @@
                 margin-top: 1rem;
                 display: grid;
                 grid-template-columns: 1fr;
-
-                // grid-template-rows: repeat(8, 40px);
             }
             &--link {
                 padding: 0.6rem 0;

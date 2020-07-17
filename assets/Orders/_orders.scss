@@ -109,6 +109,76 @@
     // }
 }
 
+.singleOrder {
+    max-width: 968px;
+    margin: 0 auto;
+    &__cardWrapper {
+        display: grid;
+        grid-template-columns: 1fr 250px;
+        grid-gap: 20px;
+    }
+    &__main {
+        &--card {
+            background: white;
+
+            &--item {
+                display: grid;
+                // grid-gap: 20px;
+                grid-template-columns: 85px 1fr;
+                // grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+                align-items: center;
+                // justify-items: center;
+                &:hover {
+                    cursor: pointer;
+                }
+                &--imgWrapper {
+                    width: 60px;
+                    position: relative;
+                    border: 1px solid $border;
+                    border-radius: 4px;
+                }
+                &--img {
+                    width: 100%;
+                }
+                &--countWrapper {
+                    top: -13px;
+                    right: -13px;
+                    position: absolute;
+                    color: white;
+                    background: $secondary;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50px;
+                    text-align: center;
+                    padding-top: 3px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .singleOrder {
+        &__cardWrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .singleOrder {
+        &__main {
+            &--card {
+                &--item {
+                    grid-template-columns: 1fr;
+                    &--details {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
 @media (max-width: 600px) {
     // .orders__table {
     //     &--search {

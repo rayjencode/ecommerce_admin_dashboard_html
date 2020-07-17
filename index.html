@@ -12,6 +12,7 @@
         <title>Great Web Admin</title>
     </head>
     <body>
+        <!-- Header -->
         <header class="header">
             <div
                 class="header__logo dflex px-2 justify-content-start align-items-center"
@@ -50,7 +51,9 @@
                 </p>
             </div>
         </header>
+        <!-- End Header -->
 
+        <!-- Header Profile -->
         <div>
             <span class="header__profile__name--nav">
                 <span class="header__profile__name--nav--pointer">
@@ -75,7 +78,9 @@
                 </ul>
             </span>
         </div>
+        <!-- End Profile Header -->
 
+        <!-- Nav Main -->
         <nav class="nav">
             <div class="nav__wrapper">
                 <span class="nav__close">
@@ -171,16 +176,17 @@
                 </ul>
             </div>
         </nav>
+        <!-- End Nav Main -->
 
         <main class="main">
-            <!-- Side Nav -->
+            <!-- Side Nav Dummy-->
             <div class="main__sideNav"></div>
             <!-- End Side Nav -->
             <!-- Main Content -->
             <div class="main__content">
                 <!-- ==================-->
                 <!-- Home Page -->
-                <div class="home">
+                <div class="home hide-item">
                     <h2 class="my-3">Overview Dashboard</h2>
 
                     <!-- TOP CARDS -->
@@ -357,7 +363,7 @@
 
                 <!-- ==================-->
                 <!-- Orders Page -->
-                <div class="orders">
+                <div class="orders hide-item">
                     <h2 class="my-3">Orders</h2>
                     <div class="table card px-3 py-2 my-3">
                         <div class="table--filter mb-2">
@@ -763,7 +769,7 @@
 
                 <!-- ==================-->
                 <!-- Abandoned Orders Page -->
-                <div class="abandoned">
+                <div class="abandoned hide-item">
                     <h2 class="my-3">Abandoned Checkouts</h2>
                     <div class="table card px-3 py-2 my-3">
                         <div class="table--filter mb-2">
@@ -940,6 +946,220 @@
                     </div>
                 </div>
                 <!-- End Abandoned Orders Page -->
+                <!-- ==================-->
+
+                <!-- ==================-->
+                <!-- Single Order Page -->
+                <div class="singleOrder">
+                    <div class="singleOrder__header">
+                        <div class="breadcramb">
+                            <i class="fas fa-angle-left"></i>
+                        </div>
+                        <div class="singleOrder__title">
+                            <h2>#1043</h2>
+                            <p>July 17, 2020 at 3:28 am from Online Store</p>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span>
+                                        <i class="fas fa-circle"></i>Paid</span
+                                    >
+                                </li>
+                                <li>
+                                    <span>
+                                        <i class="fas fa-circle"></i
+                                        >Processed</span
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="singleOrder__buttons"></div>
+                    </div>
+                    <div class="singleOrder__cardWrapper my-2">
+                        <div class="singleOrder__main">
+                            <div class="singleOrder__main--card card py-2 px-3">
+                                <div
+                                    class="singleOrder__main--card--heading dflex justify-content-start align-items-center mb-2"
+                                >
+                                    <i
+                                        class="mr-1 fas fa-check text-success"
+                                    ></i>
+                                    <p><strong>Processed (1)</strong> #1043</p>
+                                </div>
+
+                                <div class="mb-2">
+                                    <p>LBC Tracking</p>
+                                    <a href="#" \>53458503945</a>
+                                </div>
+
+                                <hr />
+                                <div class="singleOrder__main--card--content">
+                                    <ul
+                                        class="singleOrder__main--card--itemList list-unstyled"
+                                    >
+                                        <!-- Order item 1 -->
+                                        <li
+                                            class="singleOrder__main--card--item py-2"
+                                        >
+                                            <div
+                                                class="singleOrder__main--card--item--imgWrapper"
+                                            >
+                                                <img
+                                                    class="singleOrder__main--card--item--img"
+                                                    src="./assets/images/1.jpg"
+                                                    alt="1"
+                                                />
+
+                                                <span
+                                                    class="singleOrder__main--card--item--countWrapper"
+                                                >
+                                                    29
+                                                </span>
+                                            </div>
+
+                                            <div
+                                                class="singleOrder__main--card--item--details dflex justify-content-between"
+                                            >
+                                                <p
+                                                    class="singleOrder__main--card--item--title"
+                                                >
+                                                    Nike Super Sports
+                                                </p>
+
+                                                <p
+                                                    class="singleOrder__main--card--item--price"
+                                                >
+                                                    &#8369; 1800
+                                                </p>
+                                                <p
+                                                    class="singleOrder__main--card--item--qty"
+                                                >
+                                                    <span class="mr-1">x</span>
+                                                    1
+                                                </p>
+                                                <p
+                                                    class="singleOrder__main--card--item--total"
+                                                >
+                                                    &#8369; 1,800
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <hr />
+                                        <!-- Order item 2 -->
+                                        <li
+                                            class="singleOrder__main--card--item py-2"
+                                        >
+                                            <div
+                                                class="singleOrder__main--card--item--imgWrapper"
+                                            >
+                                                <img
+                                                    class="singleOrder__main--card--item--img"
+                                                    src="./assets/images/2.jpg"
+                                                    alt="1"
+                                                />
+
+                                                <span
+                                                    class="singleOrder__main--card--item--countWrapper"
+                                                >
+                                                    3
+                                                </span>
+                                            </div>
+
+                                            <div
+                                                class="singleOrder__main--card--item--details dflex justify-content-between"
+                                            >
+                                                <p
+                                                    class="singleOrder__main--card--item--title"
+                                                >
+                                                    Nike Super Sports
+                                                </p>
+
+                                                <p
+                                                    class="singleOrder__main--card--item--price"
+                                                >
+                                                    &#8369; 1800
+                                                </p>
+                                                <p
+                                                    class="singleOrder__main--card--item--qty"
+                                                >
+                                                    <span class="mr-1">x</span>
+                                                    1
+                                                </p>
+                                                <p
+                                                    class="singleOrder__main--card--item--total"
+                                                >
+                                                    &#8369; 1,800
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <hr />
+                                        <!-- Order item 1 -->
+                                        <li
+                                            class="singleOrder__main--card--item py-2"
+                                        >
+                                            <div
+                                                class="singleOrder__main--card--item--imgWrapper"
+                                            >
+                                                <img
+                                                    class="singleOrder__main--card--item--img"
+                                                    src="./assets/images/3.jpg"
+                                                    alt="1"
+                                                />
+
+                                                <span
+                                                    class="singleOrder__main--card--item--countWrapper"
+                                                >
+                                                    6
+                                                </span>
+                                            </div>
+
+                                            <div
+                                                class="singleOrder__main--card--item--details dflex justify-content-between"
+                                            >
+                                                <p
+                                                    class="singleOrder__main--card--item--title"
+                                                >
+                                                    Nike Super Sports
+                                                </p>
+
+                                                <p
+                                                    class="singleOrder__main--card--item--price"
+                                                >
+                                                    &#8369; 20,309
+                                                </p>
+                                                <p
+                                                    class="singleOrder__main--card--item--qty"
+                                                >
+                                                    <span class="mr-1">x</span>
+                                                    1
+                                                </p>
+                                                <p
+                                                    class="singleOrder__main--card--item--total"
+                                                >
+                                                    &#8369; 140,800
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <hr />
+                                </div>
+                            </div>
+                            <div class="singleOrder__main--card card my-2">
+                                <div class="singleOrder__main--card--heading">
+                                    <p>Paid</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="singleOrder__sidebar">
+                            <div class="card notes">
+                                <p>Notes</p>
+                            </div>
+                            <div class="card customer">
+                                <p>Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Order Page -->
                 <!-- ==================-->
             </div>
             <!-- End Main Content -->
