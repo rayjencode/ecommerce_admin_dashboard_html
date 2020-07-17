@@ -1,9 +1,27 @@
+.paginate {
+  width: 200px;
+  margin-left: auto;
+}
+
+.paginate__icon {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.paginate__text {
+  opacity: 0.7;
+}
+
 .relative {
   position: relative;
 }
 
 .absolute {
   position: absolute;
+}
+
+.fixed {
+  position: fixed;
 }
 
 .dflex {
@@ -353,7 +371,6 @@ header {
   margin: 0;
   position: fixed;
   width: 100vw;
-  z-index: 9999;
   -webkit-transition: ease-in-out;
   transition: ease-in-out;
 }
@@ -374,8 +391,10 @@ header {
 }
 
 .header__profile__name--nav {
+  z-index: 1;
   -webkit-box-shadow: 0 2px 15px rgba(35, 40, 47, 0.25), 0 0 0 1px rgba(167, 176, 190, 0.1);
           box-shadow: 0 2px 15px rgba(35, 40, 47, 0.25), 0 0 0 1px rgba(167, 176, 190, 0.1);
+  position: fixed;
   display: none;
   top: 4rem;
   right: 2.8rem;
@@ -384,7 +403,8 @@ header {
 }
 
 .header__profile__name--nav--pointer {
-  z-index: 999;
+  z-index: 9999;
+  position: absolute;
   top: -13px;
   right: 1.3rem;
 }
@@ -486,10 +506,13 @@ header {
   color: #f9fafb;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   header {
     -ms-grid-columns: 20px 1fr auto;
         grid-template-columns: 20px 1fr auto;
+  }
+  .header {
+    z-index: 1;
   }
   .header__logo__img {
     display: none;
@@ -510,7 +533,7 @@ header {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 968px) {
   .header__search {
     width: 100%;
     margin: 0 auto;
@@ -593,7 +616,7 @@ main {
   margin-top: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   main {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -665,7 +688,7 @@ nav {
   border-radius: 4px;
 }
 
-.navWrapper {
+.nav__wrapper {
   margin-top: 3.9rem;
   position: fixed;
   width: 250px;
@@ -714,7 +737,7 @@ nav {
   border-radius: 4px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   nav {
     margin-top: 0;
     display: none;
@@ -722,18 +745,20 @@ nav {
     background: rgba(83, 83, 83, 0.404);
     -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
-    z-index: 9999;
+    z-index: 1;
   }
-  .nav__close {
-    display: block;
-  }
-  .navWrapper {
+  .nav__wrapper {
     margin-top: -4px;
-    width: 350px;
+    width: 250px;
     padding-top: 1.5rem;
     background: #f4f6f8;
     -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
+    position: relative;
+  }
+  .nav__close {
+    display: block;
+    position: absolute;
   }
 }
 

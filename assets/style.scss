@@ -1,5 +1,6 @@
 @import './variables';
 @import './components';
+@import './helpers';
 @import './header';
 @import './global';
 @import './main';
@@ -9,5 +10,3 @@
 /*PAGES*/
 @import './Home/home';
 @import './Orders/orders';
-
-@import './mediaQuery';

@@ -46,15 +46,22 @@ nav {
         background: $gray100;
         border-radius: 4px;
     }
+    &__wrapper {
+        margin-top: 3.9rem;
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        border-right: 1.3px solid $border;
+    }
 }
 
-.navWrapper {
-    margin-top: 3.9rem;
-    position: fixed;
-    width: 250px;
-    height: 100%;
-    border-right: 1.3px solid $border;
-}
+// .navWrapper {
+//     margin-top: 3.9rem;
+//     position: fixed;
+//     width: 250px;
+//     height: 100%;
+//     border-right: 1.3px solid $border;
+// }
 
 .sub__nav--list {
     // display: none;
@@ -99,28 +106,36 @@ nav {
     border-radius: 4px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     nav {
         margin-top: 0;
         display: none;
         position: fixed;
-        background: rgba(83, 83, 83, 0.404);
+        background: $overlayBG;
         transition: 0.4s ease;
-        z-index: 9999;
+        z-index: 1;
     }
     .nav {
+        &__wrapper {
+            margin-top: -4px;
+            width: 250px;
+            padding-top: 1.5rem;
+            background: $mainBG;
+            transition: 0.4s ease;
+            position: relative;
+        }
         &__close {
             display: block;
+            position: absolute;
         }
     }
 
-    .navWrapper {
-        margin-top: -4px;
-        width: 350px;
-        padding-top: 1.5rem;
-        background: $mainBG;
-        transition: 0.4s ease;
-    }
-}
-@media (max-width: 600px) {
+    // .navWrapper {
+    //     margin-top: -4px;
+    //     width: 250px;
+    //     padding-top: 1.5rem;
+    //     background: $mainBG;
+    //     transition: 0.4s ease;
+    //     position: relative;
+    // }
 }

@@ -52,8 +52,8 @@
         </header>
 
         <div>
-            <span class="header__profile__name--nav absolute">
-                <span class="header__profile__name--nav--pointer absolute">
+            <span class="header__profile__name--nav">
+                <span class="header__profile__name--nav--pointer">
                     <i class="fas fa-sort-up"></i>
                 </span>
                 <ul class="header__profile__name--nav--list">
@@ -77,8 +77,8 @@
         </div>
 
         <nav class="nav">
-            <div class="navWrapper relative">
-                <span class="nav__close absolute">
+            <div class="nav__wrapper">
+                <span class="nav__close">
                     <i class="fas fa-window-close"></i>
                 </span>
                 <ul class="nav__list">
@@ -173,10 +173,13 @@
         </nav>
 
         <main class="main">
+            <!-- Side Nav -->
             <div class="main__sideNav"></div>
+            <!-- End Side Nav -->
+            <!-- Main Content -->
             <div class="main__content">
                 <!-- Home Page -->
-                <div class="home">
+                <div class="home hide-item">
                     <h2 class="my-3">Overview Dashboard</h2>
 
                     <!-- TOP CARDS -->
@@ -348,6 +351,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- End Home Page -->
 
                 <!-- Orders Page -->
                 <div class="orders">
@@ -732,9 +736,26 @@
                             </p>
                         </div>
                         <hr />
+                        <!-- Paginate -->
+                        <div
+                            class="paginate dflex justify-content-between align-items-center mt-2"
+                        >
+                            <i class="paginate__icon fas fa-angle-left"></i>
+                            <i
+                                class="paginate__icon fas fa-angle-double-left"
+                            ></i>
+                            <p class="paginate__text">Page 1 of 1</p>
+                            <i
+                                class="paginate__icon fas fa-angle-double-right"
+                            ></i>
+                            <i class="paginate__icon fas fa-angle-right"></i>
+                        </div>
+                        <!-- End Paginate -->
                     </div>
                 </div>
+                <!-- End Orders Page -->
             </div>
+            <!-- End Main Content -->
         </main>
         <script src="./js/script.js"></script>
     </body>

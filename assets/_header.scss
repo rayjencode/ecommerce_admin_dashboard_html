@@ -7,7 +7,6 @@ header {
     margin: 0;
     position: fixed;
     width: 100vw;
-    z-index: 9999;
     transition: ease-in-out;
 }
 
@@ -25,7 +24,9 @@ header {
         width: 100%;
     }
     &__profile__name--nav {
+        z-index: 1;
         box-shadow: $box-shadow-200;
+        position: fixed;
         display: none;
         top: 4rem;
         right: 2.8rem;
@@ -33,7 +34,8 @@ header {
         background: $textwhite;
         // border: 1px solid $border;
         &--pointer {
-            z-index: 999;
+            z-index: 9999;
+            position: absolute;
             top: -13px;
             right: 1.3rem;
             i {
@@ -100,12 +102,13 @@ header {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     header {
         grid-template-columns: 20px 1fr auto;
     }
 
     .header {
+        z-index: 1;
         &__logo__img {
             display: none;
         }
@@ -126,7 +129,7 @@ header {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 968px) {
     .header {
         &__search {
             width: 100%;
