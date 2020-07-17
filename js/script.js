@@ -21,6 +21,14 @@ const toggleShowOrderFilter = document.querySelector(
     '.orders__table--filter--collapseBtn'
 );
 
+// toggle abandoned orders filter
+const showAbandonedOrderFilter = document.querySelector(
+    '.abandoned__table--filter--listWrapper'
+);
+const toggleShowAbandonedOrderFilter = document.querySelector(
+    '.abandoned__table--filter--collapseBtn'
+);
+
 // Actions
 navBtn.addEventListener('click', () => {
     console.log(`object`);
@@ -47,5 +55,10 @@ toggleProfileNav.addEventListener('click', () => {
 
 toggleShowOrderFilter.addEventListener('click', () => {
     showOrderFilter.classList.toggle('show');
-    console.log(`filter`);
+    console.log(`filter orders`);
+});
+
+toggleShowAbandonedOrderFilter.addEventListener('click', () => {
+    console.log(`filter abandoned orders`);
+    showAbandonedOrderFilter.classList.toggle('show');
 });

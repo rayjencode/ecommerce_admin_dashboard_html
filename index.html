@@ -178,8 +178,9 @@
             <!-- End Side Nav -->
             <!-- Main Content -->
             <div class="main__content">
+                <!-- ==================-->
                 <!-- Home Page -->
-                <div class="home hide-item">
+                <div class="home">
                     <h2 class="my-3">Overview Dashboard</h2>
 
                     <!-- TOP CARDS -->
@@ -352,53 +353,59 @@
                     </div>
                 </div>
                 <!-- End Home Page -->
+                <!-- ================= -->
 
+                <!-- ==================-->
                 <!-- Orders Page -->
                 <div class="orders">
                     <h2 class="my-3">Orders</h2>
-                    <div class="orders__table card px-3 py-2 my-3">
-                        <div class="orders__table--filter mb-2">
-                            <span class="orders__table--filter--collapseBtn">
+                    <div class="table card px-3 py-2 my-3">
+                        <div class="table--filter mb-2">
+                            <span
+                                class="table--filter--collapseBtn orders__table--filter--collapseBtn"
+                            >
                                 <i class="fas fa-ellipsis-h"></i>
                             </span>
-                            <div class="orders__table--filter--listWrapper">
+                            <div
+                                class="table--filter--listWrapper orders__table--filter--listWrapper"
+                            >
                                 <ul
-                                    class="orders__table--filter--list list-unstyled dflex justify-content-start"
+                                    class="table--filter--list list-unstyled dflex justify-content-start"
                                 >
                                     <li>
                                         <p
-                                            class="orders__table--filter--link orders__table--filter--link--active"
+                                            class="table--filter--link table--filter--link--active"
                                         >
                                             All
                                         </p>
                                     </li>
                                     <li>
-                                        <p class="orders__table--filter--link">
+                                        <p class="table--filter--link">
                                             Paid
                                         </p>
                                     </li>
                                     <li>
-                                        <p class="orders__table--filter--link">
+                                        <p class="table--filter--link">
                                             Unpaid
                                         </p>
                                     </li>
                                     <li>
-                                        <p class="orders__table--filter--link">
+                                        <p class="table--filter--link">
                                             Pending
                                         </p>
                                     </li>
                                     <li>
-                                        <p class="orders__table--filter--link">
+                                        <p class="table--filter--link">
                                             Not Processed
                                         </p>
                                     </li>
                                     <li>
-                                        <p class="orders__table--filter--link">
+                                        <p class="table--filter--link">
                                             Shipped
                                         </p>
                                     </li>
                                     <li>
-                                        <p class="orders__table--filter--link">
+                                        <p class="table--filter--link">
                                             Completed
                                         </p>
                                     </li>
@@ -406,10 +413,10 @@
                             </div>
                         </div>
                         <hr />
-                        <div class="orders__table--search my-3">
-                            <div class="orders__table--search--wrapper">
+                        <div class="table--search my-3">
+                            <div class="table--search--wrapper">
                                 <select
-                                    class="orders__table--search--select py-1 px-2"
+                                    class="table--search--select py-1 px-2"
                                     name=""
                                     id=""
                                 >
@@ -420,318 +427,316 @@
                                     <option value="">This Year</option>
                                     <option value="">Last Year</option>
                                 </select>
-                                <span
-                                    class="orders__table--search--select--arrow"
-                                >
+                                <span class="table--search--select--arrow">
                                     <i class="fas fa-caret-down"></i>
                                 </span>
                             </div>
                             <div class="relative">
                                 <i
-                                    class="orders__table--search--input--icon fas fa-search absolute"
+                                    class="table--search--input--icon fas fa-search absolute"
                                 ></i>
                                 <input
-                                    class="orders__table--search--input py-1 pl-4 pr-2"
+                                    class="table--search--input py-1 pl-4 pr-2"
                                     type="text"
                                     placeholder="Search orders"
                                 />
                             </div>
                         </div>
 
-                        <div class="orders__table--heading my-2">
-                            <p class="orders__table--heading--col1">Order</p>
-                            <p class="orders__table--heading--col2">
+                        <div class="table--heading my-2">
+                            <p class="table--heading--col1">Order</p>
+                            <p class="table--heading--col2">
                                 Date
                             </p>
-                            <p class="orders__table--heading--col3">Customer</p>
-                            <p class="orders__table--heading--col4">
+                            <p class="table--heading--col3">Customer</p>
+                            <p class="table--heading--col4">
                                 Payment
                             </p>
-                            <p class="orders__table--heading--col5">
+                            <p class="table--heading--col5">
                                 Fulfillment
                             </p>
-                            <p class="orders__table--heading--col6">
+                            <p class="table--heading--col6">
                                 <i class="fas fa-toggle-on"></i>
                             </p>
-                            <p class="orders__table--heading--col7">Total</p>
+                            <p class="table--heading--col7">Total</p>
                         </div>
                         <hr />
 
                         <!-- Order 1 -->
-                        <div class="orders__table--items py-1">
+                        <div class="table--items py-1">
                             <a
                                 href="#"
-                                class="orders__table--items--col1 orders__table--items--transactionId"
+                                class="table--items--col1 table--items--transactionId"
                                 >#093654</a
                             >
-                            <p class="orders__table--items--col2">
+                            <p class="table--items--col2">
                                 Jan 18, 9:31am
                             </p>
-                            <p class="orders__table--items--col3">
+                            <p class="table--items--col3">
                                 Jonathan Yu
                             </p>
-                            <p class="orders__table--items--col4">
+                            <p class="table--items--col4">
                                 <span class="badge-paid px-1">
                                     Paid
                                 </span>
                             </p>
-                            <p class="orders__table--items--col5">
+                            <p class="table--items--col5">
                                 Completed
                             </p>
-                            <p class="orders__table--items--col6">
+                            <p class="table--items--col6">
                                 <i
-                                    class="orders__table--items--indicator indicator-completed fas fa-circle"
+                                    class="table--items--indicator indicator-completed fas fa-circle"
                                 ></i>
                             </p>
-                            <p class="orders__table--items--col7">
+                            <p class="table--items--col7">
                                 &#8369; 16,943
                             </p>
                         </div>
                         <hr />
                         <!-- Order 2 -->
-                        <div class="orders__table--items py-1">
+                        <div class="table--items py-1">
                             <a
                                 href="#"
-                                class="orders__table--items--col1 orders__table--items--transactionId"
+                                class="table--items--col1 table--items--transactionId"
                                 >#093654</a
                             >
-                            <p class="orders__table--items--col2">
+                            <p class="table--items--col2">
                                 Jan 18, 9:31am
                             </p>
-                            <p class="orders__table--items--col3">
+                            <p class="table--items--col3">
                                 Jonathan Yu
                             </p>
-                            <p class="orders__table--items--col4">
+                            <p class="table--items--col4">
                                 <span class="badge-pending px-1">
                                     Pending
                                 </span>
                             </p>
-                            <p class="orders__table--items--col5">
+                            <p class="table--items--col5">
                                 Shipped
                             </p>
-                            <p class="orders__table--items--col6">
+                            <p class="table--items--col6">
                                 <i
-                                    class="orders__table--items--indicator indicator-shipped fas fa-circle"
+                                    class="table--items--indicator indicator-shipped fas fa-circle"
                                 ></i>
                             </p>
-                            <p class="orders__table--items--col7">
+                            <p class="table--items--col7">
                                 &#8369; 16,943
                             </p>
                         </div>
                         <hr />
                         <!-- Order 3 -->
-                        <div class="orders__table--items py-1">
+                        <div class="table--items py-1">
                             <a
                                 href="#"
-                                class="orders__table--items--col1 orders__table--items--transactionId"
+                                class="table--items--col1 table--items--transactionId"
                                 >#093654</a
                             >
-                            <p class="orders__table--items--col2">
+                            <p class="table--items--col2">
                                 Jan 18, 9:31am
                             </p>
-                            <p class="orders__table--items--col3">
+                            <p class="table--items--col3">
                                 Jonathan Yu
                             </p>
-                            <p class="orders__table--items--col4">
+                            <p class="table--items--col4">
                                 <span class="badge-abandoned px-1">
                                     Abandoned
                                 </span>
                             </p>
-                            <p class="orders__table--items--col5">
+                            <p class="table--items--col5">
                                 Processed
                             </p>
-                            <p class="orders__table--items--col6">
+                            <p class="table--items--col6">
                                 <i
-                                    class="orders__table--items--indicator indicator-processed fas fa-circle"
+                                    class="table--items--indicator indicator-processed fas fa-circle"
                                 ></i>
                             </p>
-                            <p class="orders__table--items--col7">
+                            <p class="table--items--col7">
                                 &#8369; 16,943
                             </p>
                         </div>
                         <hr />
                         <!-- Order 4 -->
-                        <div class="orders__table--items py-1">
+                        <div class="table--items py-1">
                             <a
                                 href="#"
-                                class="orders__table--items--col1 orders__table--items--transactionId"
+                                class="table--items--col1 table--items--transactionId"
                                 >#093654</a
                             >
-                            <p class="orders__table--items--col2">
+                            <p class="table--items--col2">
                                 Jan 18, 9:31am
                             </p>
-                            <p class="orders__table--items--col3">
+                            <p class="table--items--col3">
                                 Jonathan Yu
                             </p>
-                            <p class="orders__table--items--col4">
+                            <p class="table--items--col4">
                                 <span class="badge-abandoned px-1">
                                     Abandoned
                                 </span>
                             </p>
-                            <p class="orders__table--items--col5">
+                            <p class="table--items--col5">
                                 Not Processed
                             </p>
-                            <p class="orders__table--items--col6">
+                            <p class="table--items--col6">
                                 <i
-                                    class="orders__table--items--indicator indicator-not-processed fas fa-circle"
+                                    class="table--items--indicator indicator-not-processed fas fa-circle"
                                 ></i>
                             </p>
-                            <p class="orders__table--items--col7">
+                            <p class="table--items--col7">
                                 &#8369; 16,943
                             </p>
                         </div>
                         <hr />
                         <!-- Order 5 -->
-                        <div class="orders__table--items py-1">
+                        <div class="table--items py-1">
                             <a
                                 href="#"
-                                class="orders__table--items--col1 orders__table--items--transactionId"
+                                class="table--items--col1 table--items--transactionId"
                                 >#093654</a
                             >
-                            <p class="orders__table--items--col2">
+                            <p class="table--items--col2">
                                 Jan 18, 9:31am
                             </p>
-                            <p class="orders__table--items--col3">
+                            <p class="table--items--col3">
                                 Jonathan Yu
                             </p>
-                            <p class="orders__table--items--col4">
+                            <p class="table--items--col4">
                                 <span class="badge-abandoned px-1">
                                     Abandoned
                                 </span>
                             </p>
-                            <p class="orders__table--items--col5">
+                            <p class="table--items--col5">
                                 Refunded
                             </p>
-                            <p class="orders__table--items--col6">
+                            <p class="table--items--col6">
                                 <i
-                                    class="orders__table--items--indicator indicator-refunded fas fa-circle"
+                                    class="table--items--indicator indicator-refunded fas fa-circle"
                                 ></i>
                             </p>
-                            <p class="orders__table--items--col7">
+                            <p class="table--items--col7">
                                 &#8369; 16,943
                             </p>
                         </div>
                         <hr />
                         <!-- Order 6 -->
-                        <div class="orders__table--items py-1">
+                        <div class="table--items py-1">
                             <a
                                 href="#"
-                                class="orders__table--items--col1 orders__table--items--transactionId"
+                                class="table--items--col1 table--items--transactionId"
                                 >#093654</a
                             >
-                            <p class="orders__table--items--col2">
+                            <p class="table--items--col2">
                                 Jan 18, 9:31am
                             </p>
-                            <p class="orders__table--items--col3">
+                            <p class="table--items--col3">
                                 Jonathan Yu
                             </p>
-                            <p class="orders__table--items--col4">
+                            <p class="table--items--col4">
                                 <span class="badge-paid px-1">
                                     Paid
                                 </span>
                             </p>
-                            <p class="orders__table--items--col5">
+                            <p class="table--items--col5">
                                 Completed
                             </p>
-                            <p class="orders__table--items--col6">
+                            <p class="table--items--col6">
                                 <i
-                                    class="orders__table--items--indicator indicator-completed fas fa-circle"
+                                    class="table--items--indicator indicator-completed fas fa-circle"
                                 ></i>
                             </p>
-                            <p class="orders__table--items--col7">
+                            <p class="table--items--col7">
                                 &#8369; 16,943
                             </p>
                         </div>
                         <hr />
                         <!-- Order 7 -->
-                        <div class="orders__table--items py-1">
+                        <div class="table--items py-1">
                             <a
                                 href="#"
-                                class="orders__table--items--col1 orders__table--items--transactionId"
+                                class="table--items--col1 table--items--transactionId"
                                 >#093654</a
                             >
-                            <p class="orders__table--items--col2">
+                            <p class="table--items--col2">
                                 Jan 18, 9:31am
                             </p>
-                            <p class="orders__table--items--col3">
+                            <p class="table--items--col3">
                                 Jonathan Yu
                             </p>
-                            <p class="orders__table--items--col4">
+                            <p class="table--items--col4">
                                 <span class="badge-paid px-1">
                                     Paid
                                 </span>
                             </p>
-                            <p class="orders__table--items--col5">
+                            <p class="table--items--col5">
                                 Shipped
                             </p>
-                            <p class="orders__table--items--col6">
+                            <p class="table--items--col6">
                                 <i
-                                    class="orders__table--items--indicator indicator-shipped fas fa-circle"
+                                    class="table--items--indicator indicator-shipped fas fa-circle"
                                 ></i>
                             </p>
-                            <p class="orders__table--items--col7">
+                            <p class="table--items--col7">
                                 &#8369; 16,943
                             </p>
                         </div>
                         <hr />
                         <!-- Order 8 -->
-                        <div class="orders__table--items py-1">
+                        <div class="table--items py-1">
                             <a
                                 href="#"
-                                class="orders__table--items--col1 orders__table--items--transactionId"
+                                class="table--items--col1 table--items--transactionId"
                                 >#093654</a
                             >
-                            <p class="orders__table--items--col2">
+                            <p class="table--items--col2">
                                 Jan 18, 9:31am
                             </p>
-                            <p class="orders__table--items--col3">
+                            <p class="table--items--col3">
                                 Jonathan Yu
                             </p>
-                            <p class="orders__table--items--col4">
+                            <p class="table--items--col4">
                                 <span class="badge-paid px-1">
                                     Paid
                                 </span>
                             </p>
-                            <p class="orders__table--items--col5">
+                            <p class="table--items--col5">
                                 Not Processed
                             </p>
-                            <p class="orders__table--items--col6">
+                            <p class="table--items--col6">
                                 <i
-                                    class="orders__table--items--indicator indicator-not-processed fas fa-circle"
+                                    class="table--items--indicator indicator-not-processed fas fa-circle"
                                 ></i>
                             </p>
-                            <p class="orders__table--items--col7">
+                            <p class="table--items--col7">
                                 &#8369; 16,943
                             </p>
                         </div>
                         <hr />
                         <!-- Order 9 -->
-                        <div class="orders__table--items py-1">
+                        <div class="table--items py-1">
                             <a
                                 href="#"
-                                class="orders__table--items--col1 orders__table--items--transactionId"
+                                class="table--items--col1 table--items--transactionId"
                                 >#093654</a
                             >
-                            <p class="orders__table--items--col2">
+                            <p class="table--items--col2">
                                 Jan 18, 9:31am
                             </p>
-                            <p class="orders__table--items--col3">
+                            <p class="table--items--col3">
                                 Jonathan Yu
                             </p>
-                            <p class="orders__table--items--col4">
+                            <p class="table--items--col4">
                                 <span class="badge-paid px-1">
                                     Paid
                                 </span>
                             </p>
-                            <p class="orders__table--items--col5">
+                            <p class="table--items--col5">
                                 Processed
                             </p>
-                            <p class="orders__table--items--col6">
+                            <p class="table--items--col6">
                                 <i
-                                    class="orders__table--items--indicator indicator-processed fas fa-circle"
+                                    class="table--items--indicator indicator-processed fas fa-circle"
                                 ></i>
                             </p>
-                            <p class="orders__table--items--col7">
+                            <p class="table--items--col7">
                                 &#8369; 16,943
                             </p>
                         </div>
@@ -754,6 +759,188 @@
                     </div>
                 </div>
                 <!-- End Orders Page -->
+                <!-- ==================-->
+
+                <!-- ==================-->
+                <!-- Abandoned Orders Page -->
+                <div class="abandoned">
+                    <h2 class="my-3">Abandoned Checkouts</h2>
+                    <div class="table card px-3 py-2 my-3">
+                        <div class="table--filter mb-2">
+                            <span
+                                class="table--filter--collapseBtn abandoned__table--filter--collapseBtn"
+                            >
+                                <i class="fas fa-ellipsis-h"></i>
+                            </span>
+                            <div
+                                class="table--filter--listWrapper abandoned__table--filter--listWrapper"
+                            >
+                                <ul
+                                    class="table--filter--list list-unstyled dflex justify-content-start"
+                                >
+                                    <li>
+                                        <p
+                                            class="table--filter--link table--filter--link--active"
+                                        >
+                                            All Checkouts
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="table--search my-3">
+                            <div class="table--search--wrapper">
+                                <select
+                                    class="table--search--select py-1 px-2"
+                                    name=""
+                                    id=""
+                                >
+                                    <option value="">Filter</option>
+                                    <option value="">This Month</option>
+                                    <option value="">Last Month</option>
+                                    <option value="">Last 3 Months</option>
+                                    <option value="">This Year</option>
+                                    <option value="">Last Year</option>
+                                </select>
+                                <span class="table--search--select--arrow">
+                                    <i class="fas fa-caret-down"></i>
+                                </span>
+                            </div>
+                            <div class="relative">
+                                <i
+                                    class="table--search--input--icon fas fa-search absolute"
+                                ></i>
+                                <input
+                                    class="table--search--input py-1 pl-4 pr-2"
+                                    type="text"
+                                    placeholder="Start typing to search for checkouts..."
+                                />
+                            </div>
+                        </div>
+
+                        <div class="table--heading my-2">
+                            <p class="table--heading--col1">Checkout</p>
+                            <p class="table--heading--col2">
+                                Date
+                            </p>
+                            <p class="table--heading--col3">Customer</p>
+                            <p class="table--heading--col4">
+                                Email Sent
+                            </p>
+                            <p class="table--heading--col5">
+                                Recovery
+                            </p>
+                            <p class="table--heading--col7">Total</p>
+                        </div>
+                        <hr />
+
+                        <!-- Abandoned checkout 1 -->
+                        <div class="table--items py-1">
+                            <a
+                                href="#"
+                                class="table--items--col1 table--items--transactionId"
+                                >#093654</a
+                            >
+                            <p class="table--items--col2">
+                                Jan 18, 9:31am
+                            </p>
+                            <p class="table--items--col3">
+                                Jonathan Yu
+                            </p>
+                            <p class="table--items--col4">
+                                <span class="badge-not-sent px-1">
+                                    Not Sent
+                                </span>
+                            </p>
+                            <p class="table--items--col5">
+                                <span class="badge-not-recovered px-1">
+                                    Not Recovered
+                                </span>
+                            </p>
+
+                            <p class="table--items--col7">
+                                &#8369; 7,301
+                            </p>
+                        </div>
+                        <hr />
+                        <!-- Abandoned checkout 2 -->
+                        <div class="table--items py-1">
+                            <a
+                                href="#"
+                                class="table--items--col1 table--items--transactionId"
+                                >#093654</a
+                            >
+                            <p class="table--items--col2">
+                                Jan 18, 9:31am
+                            </p>
+                            <p class="table--items--col3">
+                                Jonathan Yu
+                            </p>
+                            <p class="table--items--col4">
+                                <span class="badge-sent px-1">
+                                    Sent
+                                </span>
+                            </p>
+                            <p class="table--items--col5">
+                                <span class="badge-not-recovered px-1">
+                                    Not Recovered
+                                </span>
+                            </p>
+
+                            <p class="table--items--col7">
+                                &#8369; 2,450
+                            </p>
+                        </div>
+                        <hr />
+                        <!-- Abandoned checkout 2 -->
+                        <div class="table--items py-1">
+                            <a
+                                href="#"
+                                class="table--items--col1 table--items--transactionId"
+                                >#093654</a
+                            >
+                            <p class="table--items--col2">
+                                Jan 18, 9:31am
+                            </p>
+                            <p class="table--items--col3">
+                                Jonathan Yu
+                            </p>
+                            <p class="table--items--col4">
+                                <span class="badge-sent px-1">
+                                    Sent
+                                </span>
+                            </p>
+                            <p class="table--items--col5">
+                                <span class="badge-recovered px-1">
+                                    Recovered
+                                </span>
+                            </p>
+
+                            <p class="table--items--col7">
+                                &#8369; 12,103
+                            </p>
+                        </div>
+                        <hr />
+                        <!-- Paginate -->
+                        <div
+                            class="paginate dflex justify-content-between align-items-center mt-2"
+                        >
+                            <i class="paginate__icon fas fa-angle-left"></i>
+                            <i
+                                class="paginate__icon fas fa-angle-double-left"
+                            ></i>
+                            <p class="paginate__text">Page 1 of 1</p>
+                            <i
+                                class="paginate__icon fas fa-angle-double-right"
+                            ></i>
+                            <i class="paginate__icon fas fa-angle-right"></i>
+                        </div>
+                        <!-- End Paginate -->
+                    </div>
+                </div>
+                <!-- End Abandoned Orders Page -->
+                <!-- ==================-->
             </div>
             <!-- End Main Content -->
         </main>
