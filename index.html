@@ -950,7 +950,7 @@
 
                 <!-- ==================-->
                 <!-- Single Order Page -->
-                <div class="singleOrder hide-item">
+                <div class="singleOrder">
                     <div class="singleOrder__header">
                         <div class="breadcramb mt-3">
                             <i class="fas fa-angle-left mr-1"></i>Orders
@@ -1205,7 +1205,9 @@
                                         Mark as fulfilled
                                     </button>
 
-                                    <button class="btn btn-secondary ml-1">
+                                    <button
+                                        class="btn btn-secondary ml-1 singleOrder__main--addTracking"
+                                    >
                                         Add Tracking
                                     </button>
 
@@ -1341,6 +1343,48 @@
                                     <strong>BILLING ADDRESS</strong>
                                 </p>
                                 <p>Same as Shipping address</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal singleOrder__main--modal">
+                        <div class="modal__content">
+                            <span
+                                class="modal__close singleOrder__main--modal--close"
+                                >&times;</span
+                            >
+                            <h3 class="mb-2">Edit Tracking</h3>
+                            <hr />
+                            <p class="mt-2">Tracking Number</p>
+                            <input type="text" class="input my-1" />
+
+                            <p class="mt-1">Shipping Carrier</p>
+                            <select class="input my-1">
+                                <option value="None">None</option>
+                                <option value="None">LBC Padala</option>
+                                <option value="None">J&T</option>
+                                <option value="None">RJS</option>
+                                <option value="None">DHL</option>
+                                <option value="None">FedEx</option>
+                            </select>
+
+                            <div class="my-2">
+                                <input type="checkbox" id="notify" />
+                                <label for="notify">
+                                    Send notification email to customer</label
+                                >
+                            </div>
+
+                            <hr />
+
+                            <div
+                                class="dflex justify-content-end align-items-center mt-2"
+                            >
+                                <button class="btn btn-light mr-2">
+                                    Cancel
+                                </button>
+                                <button class="btn btn-secondary">Save</button>
                             </div>
                         </div>
                     </div>

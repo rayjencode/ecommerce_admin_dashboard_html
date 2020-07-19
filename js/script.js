@@ -29,6 +29,17 @@ const toggleShowAbandonedOrderFilter = document.querySelector(
     '.abandoned__table--filter--collapseBtn'
 );
 
+// Add/Edit tracking button single order page
+const showAddEditTrackingModal = document.querySelector(
+    '.singleOrder__main--modal'
+);
+const toggleShowAddEditTrackingModal = document.querySelector(
+    '.singleOrder__main--addTracking'
+);
+const closeShowAddEditTrackingModal = document.querySelector(
+    '.singleOrder__main--modal--close'
+);
+
 // Actions
 navBtn.addEventListener('click', () => {
     console.log(`object`);
@@ -61,4 +72,12 @@ toggleShowOrderFilter.addEventListener('click', () => {
 toggleShowAbandonedOrderFilter.addEventListener('click', () => {
     console.log(`filter abandoned orders`);
     showAbandonedOrderFilter.classList.toggle('show');
+});
+
+toggleShowAddEditTrackingModal.addEventListener('click', () => {
+    showAddEditTrackingModal.classList.toggle('show');
+});
+
+closeShowAddEditTrackingModal.addEventListener('click', () => {
+    showAddEditTrackingModal.classList.toggle('show');
 });
