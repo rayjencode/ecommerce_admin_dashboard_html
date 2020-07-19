@@ -950,11 +950,10 @@
 
                 <!-- ==================-->
                 <!-- Single Order Page -->
-                <div class="singleOrder">
+                <div class="singleOrder hide-item">
                     <div class="singleOrder__header">
                         <div class="breadcramb mt-3">
-                            <i class="fas fa-angle-left"></i>
-                            Orders
+                            <i class="fas fa-angle-left mr-1"></i>Orders
                         </div>
                         <div
                             class="singleOrder__title mt-1 dflex justify-content-start align-items-center"
@@ -963,14 +962,14 @@
                             <p>July 17, 2020 at 3:28 am from Online Store</p>
                         </div>
 
-                        <div class="singleOrder__actionbar mt-2">
+                        <div class="singleOrder__actionbar mt-1">
                             <ul
                                 class="list-unstyled dflex justify-content-start align-items-center"
                             >
                                 <li>
                                     <!-- Select Btn Option -->
-                                    <button class="selectBtnFlat ml-1">
-                                        <i class="fas fa-print"></i>
+                                    <button class="selectBtnFlat">
+                                        <i class="mr-1 fas fa-print"></i>
                                         Print
                                     </button>
                                     <!-- End Select Btn Option -->
@@ -978,7 +977,7 @@
                                 <li>
                                     <!-- Select Btn Option -->
                                     <button class="selectBtnFlat ml-1">
-                                        <i class="fas fa-reply"></i>
+                                        <i class="mr-1 fas fa-reply"></i>
                                         Refund
                                     </button>
                                     <!-- End Select Btn Option -->
@@ -1028,7 +1027,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="singleOrder__cardWrapper mt-4">
+                    <div class="singleOrder__cardWrapper mt-2">
                         <div class="singleOrder__main">
                             <div class="singleOrder__main--card card py-2 px-3">
                                 <div
@@ -1266,7 +1265,7 @@
                                     >
                                         <p class="py-1">Subtotal</p>
                                         <p class="py-1">1 item</p>
-                                        <p class="py-1">&#8369; 11.00</p>
+                                        <p class="py-1">&#8369; 341,111.00</p>
                                         <p class="py-1">Shipping</p>
                                         <p class="py-1">Standard (0.0kg)</p>
                                         <p class="py-1">&#8369; 0.00</p>
@@ -1278,14 +1277,14 @@
                                         class="dflex justify-content-between mb-2"
                                     >
                                         <p>Total</p>
-                                        <p>&#8369; 13.20</p>
+                                        <p>&#8369; 353,021.20</p>
                                     </div>
                                     <hr />
                                     <div
                                         class="dflex justify-content-between mt-2"
                                     >
                                         <p>Paid by Customer</p>
-                                        <p>&#8369; 13.20</p>
+                                        <p>&#8369; 353,021.20</p>
                                     </div>
                                 </div>
                             </div>
@@ -1347,6 +1346,252 @@
                     </div>
                 </div>
                 <!-- End Single Order Page -->
+                <!-- ==================-->
+
+                <!-- ==================-->
+                <!-- fulfillment page -->
+
+                <div class="fulfillment hide-item">
+                    <div
+                        class="fulfillment__title dflex justify-content-between align-items-center"
+                    >
+                        <div>
+                            <div class="breadcramb mt-3">
+                                <i class="fas fa-angle-left mr-1"></i>#1043
+                            </div>
+                            <h1 class="my-1">Fulfillment</h1>
+                            <button class="selectBtnFlat">
+                                <i class="mr-1 fas fa-print"></i>
+                                Print packing slip
+                            </button>
+                        </div>
+                        <div class="fulfillment__title--cancelBtn">
+                            <button class="btn btn-light">Cancel</button>
+                        </div>
+                    </div>
+
+                    <div class="fulfillment__cardWrapper mt-2">
+                        <div class="fulfillment__main card bg-white py-2 px-2">
+                            <h3>Mark as fulfilled</h3>
+                            <p class="my-2">QUANTITY TO FULFILL</p>
+
+                            <div class="fulfillment__main--heading my-2">
+                                <h5>Items</h5>
+                                <h5>Weight</h5>
+                                <h5>Quantity</h5>
+                            </div>
+                            <hr />
+                            <!-- list Item 1 -->
+                            <div class="fulfillment__main--items my-2">
+                                <div
+                                    class="dflex justify-content-start align-items-center"
+                                >
+                                    <div
+                                        class="fulfillment__main--items--imgWrapper mr-1"
+                                    >
+                                        <img
+                                            class="fulfillment__main--items--img"
+                                            src="./assets/images/1.jpg"
+                                            alt="product 10"
+                                        />
+                                    </div>
+                                    <div>
+                                        <a
+                                            class="fulfillment__main--items--productName"
+                                            href="#"
+                                            >Nike Super Sports Extreme</a
+                                        >
+                                        <p>Medium</p>
+                                        <p>SKU: SKU9543867</p>
+                                    </div>
+                                </div>
+                                <div class="fulfillment__main--items--weight">
+                                    <p>0.5kg</p>
+                                </div>
+                                <div
+                                    class="fulfillment__main--items--inputWrapper"
+                                >
+                                    <input
+                                        class="fulfillment__main--items--input"
+                                        type="number"
+                                        value="10"
+                                    /><span>of 10</span>
+                                </div>
+                            </div>
+                            <hr />
+                            <!-- End list item 1 -->
+
+                            <!-- list Item 2 -->
+                            <div class="fulfillment__main--items my-2">
+                                <div
+                                    class="dflex justify-content-start align-items-center"
+                                >
+                                    <div
+                                        class="fulfillment__main--items--imgWrapper mr-1"
+                                    >
+                                        <img
+                                            class="fulfillment__main--items--img"
+                                            src="./assets/images/2.jpg"
+                                            alt="product 10"
+                                        />
+                                    </div>
+                                    <div>
+                                        <a
+                                            class="fulfillment__main--items--productName"
+                                            href="#"
+                                            >Nike Super Sports Extreme</a
+                                        >
+                                        <p>Medium</p>
+                                        <p>SKU: SKU9543867</p>
+                                    </div>
+                                </div>
+                                <div class="fulfillment__main--items--weight">
+                                    <p>0.5kg</p>
+                                </div>
+                                <div
+                                    class="fulfillment__main--items--inputWrapper"
+                                >
+                                    <input
+                                        class="fulfillment__main--items--input"
+                                        type="number"
+                                        value="10"
+                                    /><span>of 10</span>
+                                </div>
+                            </div>
+                            <hr />
+                            <!-- End list item 2-->
+
+                            <!-- list Item 3 -->
+                            <div class="fulfillment__main--items my-2">
+                                <div
+                                    class="dflex justify-content-start align-items-center"
+                                >
+                                    <div
+                                        class="fulfillment__main--items--imgWrapper mr-1"
+                                    >
+                                        <img
+                                            class="fulfillment__main--items--img"
+                                            src="./assets/images/3.jpg"
+                                            alt="product 10"
+                                        />
+                                    </div>
+                                    <div>
+                                        <a
+                                            class="fulfillment__main--items--productName"
+                                            href="#"
+                                            >Nike Super Sports Extreme</a
+                                        >
+                                        <p>Medium</p>
+                                        <p>SKU: SKU9543867</p>
+                                    </div>
+                                </div>
+                                <div class="fulfillment__main--items--weight">
+                                    <p>0.5kg</p>
+                                </div>
+                                <div
+                                    class="fulfillment__main--items--inputWrapper"
+                                >
+                                    <input
+                                        class="fulfillment__main--items--input"
+                                        type="number"
+                                        value="10"
+                                    /><span>of 10</span>
+                                </div>
+                            </div>
+                            <hr />
+                            <!-- End list item 3-->
+
+                            <p class="my-2">
+                                <strong>TRACKING INFORMATION</strong> (OPTIONAL)
+                            </p>
+
+                            <div class="fulfillment__main--tracking my-2">
+                                <div>
+                                    <p class="my-1">Tracking Number</p>
+                                    <input class="input" type="text" />
+                                </div>
+                                <!-- Select Input Option -->
+                                <div class="inputSelect">
+                                    <p class="my-1">Shipping Carrier</p>
+                                    <input
+                                        class="inputSelect__input"
+                                        placeholder="None"
+                                        type="text"
+                                    />
+                                    <i
+                                        class="inputSelect__icon fas fa-caret-down"
+                                    ></i>
+                                    <div class="inputSelect__options hide-item">
+                                        <ul class="selectBtn__options--list">
+                                            <li
+                                                class="selectBtn__options--item"
+                                            >
+                                                LBC Padala
+                                            </li>
+                                            <li
+                                                class="selectBtn__options--item"
+                                            >
+                                                J & T
+                                            </li>
+                                            <li
+                                                class="selectBtn__options--item"
+                                            >
+                                                JRS Carrier
+                                            </li>
+                                            <li
+                                                class="selectBtn__options--item"
+                                            >
+                                                DHL
+                                            </li>
+                                            <li
+                                                class="selectBtn__options--item"
+                                            >
+                                                FedEx
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="fulfillment__main--notify mt-2">
+                                <input type="checkbox" id="notify" />
+                                <label for="notify"
+                                    >Send shipment details to your customer now
+                                </label>
+                            </div>
+                        </div>
+                        <div class="fulfillment__sidebar">
+                            <div
+                                class="fulfillment__sidebar--shippingAddress card bg-white py-1 px-2"
+                            >
+                                <h4 class="my-1">Shipping Address</h4>
+                                <a href="#">Rayjens Code</a>
+                                <p class="my-1">
+                                    Apple St. Obrero 9500 General Santos City
+                                    Philippines
+                                </p>
+                                <hr />
+                                <p class="my-1">
+                                    The customer selected
+                                    <strong>Standard (₱0.00)</strong> at
+                                    checkout.
+                                </p>
+
+                                <button
+                                    class="btn btn-secondary btn-block my-2"
+                                >
+                                    Fulfill Items
+                                </button>
+                                <div class="fulfillment__sidebar--cancelBtn">
+                                    <button class="btn btn-light btn-block">
+                                        Cancel
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fulfillment page -->
                 <!-- ==================-->
             </div>
             <!-- End Main Content -->

@@ -1,0 +1,94 @@
+.fulfillment {
+    max-width: 968px;
+    margin: 0 auto;
+    &__cardWrapper {
+        display: grid;
+        grid-template-columns: 1fr minmax(auto, 290px);
+        grid-gap: 20px;
+    }
+    &__main {
+        &--heading {
+            display: grid;
+            grid-template-columns: 1fr 80px 140px;
+        }
+        &--items {
+            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 80px 140px;
+            &--productName {
+                font-size: 1.3rem;
+            }
+            &--imgWrapper {
+                width: 70px;
+                height: 70px;
+            }
+            &--img {
+                width: 100%;
+            }
+            &--inputWrapper {
+                border: 1px solid $gray200;
+                border-radius: 4px;
+            }
+            &--input {
+                width: 70%;
+                padding: 9px;
+                border: none;
+            }
+        }
+        &--tracking {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+    }
+    &__sidebar {
+        &--cancelBtn {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .fulfillment {
+        &__cardWrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .fulfillment {
+        &__title {
+            &--cancelBtn {
+                display: none;
+            }
+        }
+        &__main {
+            &--heading {
+                display: none;
+            }
+            &--items {
+                position: relative;
+                grid-template-columns: 1fr;
+
+                &--inputWrapper {
+                    width: 120px;
+                    margin-top: 1rem;
+                }
+                &--weight {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+            &--tracking {
+                grid-template-columns: 1fr;
+            }
+        }
+        &__sidebar {
+            &--cancelBtn {
+                display: block;
+            }
+        }
+    }
+}

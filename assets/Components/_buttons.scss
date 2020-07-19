@@ -5,6 +5,10 @@
     cursor: pointer;
 }
 
+.btn-block {
+    width: 100%;
+}
+
 .btn-secondary {
     background: linear-gradient(to bottom, #6371c7, #5563c1);
     color: white;
@@ -14,6 +18,19 @@
     &:active,
     &:focus {
         background: $primary100;
+    }
+}
+
+.btn-light {
+    border: 1px solid $text400;
+    background: white;
+    color: $text200;
+    &:hover {
+        background: $gray300;
+    }
+    &:active,
+    &:focus {
+        background: $gray100;
     }
 }
 
@@ -27,6 +44,7 @@
     background: white;
 
     &__options {
+        text-align: left;
         top: 40px;
         right: 0px;
         border: 1px solid $border;
@@ -43,7 +61,7 @@
             margin-bottom: 7px;
         }
         &--item {
-            padding: 0.7rem 0;
+            padding: 0.7rem 1.3rem;
             &:hover {
                 background: $primary200;
                 color: white;
@@ -60,6 +78,7 @@
     position: relative;
     color: $text200;
     background: none;
+
     &:active,
     &:focus {
         background: $gray100;
