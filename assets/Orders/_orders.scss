@@ -112,6 +112,11 @@
 .singleOrder {
     max-width: 968px;
     margin: 0 auto;
+    &__title {
+        &--indicator {
+            font-size: 0.7rem;
+        }
+    }
     &__cardWrapper {
         display: grid;
         grid-template-columns: 1fr 250px;
@@ -152,6 +157,33 @@
                     text-align: center;
                     padding-top: 3px;
                 }
+                &--title {
+                    color: $secondary;
+                }
+            }
+            &--icon {
+                &--fulfilled {
+                    background: $success;
+                    border-radius: 50px;
+                    width: 28px;
+                    height: 28px;
+                    display: grid;
+                    text-align: center;
+                    align-items: center;
+                }
+                &--unfulfilled {
+                    background: $warning;
+                    border-radius: 50px;
+                    width: 28px;
+                    height: 28px;
+                    display: grid;
+                    text-align: center;
+                    align-items: center;
+                }
+            }
+            &--paymentDetails {
+                display: grid;
+                grid-template-columns: 80px 1fr auto;
             }
         }
     }
@@ -175,6 +207,10 @@
                         margin-top: 10px;
                     }
                 }
+                // &--paymentDetails {
+                //     // display: none;
+                //     grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+                // }
             }
         }
     }

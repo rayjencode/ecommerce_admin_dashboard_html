@@ -1,0 +1,52 @@
+.btn {
+    border: 1px solid $gray;
+    padding: 9px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background: linear-gradient(to bottom, #6371c7, #5563c1);
+    color: white;
+    &:hover {
+        background: $primary200;
+    }
+    &:active {
+        background: $primary100;
+    }
+}
+
+.selectBtn {
+    border: 1px solid $text300;
+    padding: 9px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    color: $text200;
+    background: white;
+
+    &__options {
+        top: 40px;
+        right: 0px;
+        border: 1px solid $border;
+        border-radius: 4px;
+        cursor: pointer;
+        position: absolute;
+        width: 170px;
+        color: $text200;
+        background: white;
+        box-shadow: $box-shadow-200;
+        &--list {
+            list-style: none;
+            margin-top: 7px;
+            margin-bottom: 7px;
+        }
+        &--item {
+            padding: 0.7rem 0;
+            &:hover {
+                background: $primary200;
+                color: white;
+            }
+        }
+    }
+}

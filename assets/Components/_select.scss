@@ -1,0 +1,11 @@
+.select {
+    border: $gray100;
+    background: red;
+    border-radius: 4px;
+
+    cursor: pointer;
+    &__title {
+        // padding: 9px 15px;
+        color: red;
+    }
+}
