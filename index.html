@@ -967,29 +967,63 @@
                             <ul
                                 class="list-unstyled dflex justify-content-start align-items-center"
                             >
-                                <li class="mr-2">
-                                    <p>
+                                <li>
+                                    <!-- Select Btn Option -->
+                                    <button class="selectBtnFlat ml-1">
                                         <i class="fas fa-print"></i>
                                         Print
-                                    </p>
+                                    </button>
+                                    <!-- End Select Btn Option -->
                                 </li>
-                                <li class="mr-2">
-                                    <p>
+                                <li>
+                                    <!-- Select Btn Option -->
+                                    <button class="selectBtnFlat ml-1">
                                         <i class="fas fa-reply"></i>
                                         Refund
-                                    </p>
+                                    </button>
+                                    <!-- End Select Btn Option -->
                                 </li>
-                                <li class="mr-2">
-                                    <p>
-                                        <i class="fas fa-pencil-alt"></i>
+                                <li>
+                                    <!-- Select Btn Option -->
+                                    <button class="selectBtnFlat ml-1">
+                                        <i class="mr-1 fas fa-pencil-alt"></i>
                                         Edit
-                                    </p>
+                                    </button>
+                                    <!-- End Select Btn Option -->
                                 </li>
-                                <li class="mr-2">
-                                    <p>
-                                        More actions
-                                        <i class="fas fa-caret-down"></i>
-                                    </p>
+                                <li class="mr-1">
+                                    <!-- Select Btn Option -->
+                                    <button class="selectBtnFlat">
+                                        More Actions
+                                        <i
+                                            class="ml-1 selectBtnFlat__arrow fas fa-caret-down"
+                                        ></i>
+
+                                        <div
+                                            class="selectBtnFlat__options hide-item"
+                                        >
+                                            <ul
+                                                class="selectBtnFlat__options--list"
+                                            >
+                                                <li
+                                                    class="selectBtnFlat__options--item"
+                                                >
+                                                    Edit Tracking
+                                                </li>
+                                                <li
+                                                    class="selectBtnFlat__options--item"
+                                                >
+                                                    Track Shipment
+                                                </li>
+                                                <li
+                                                    class="selectBtnFlat__options--item"
+                                                >
+                                                    Cancel Fulfillment
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </button>
+                                    <!-- End Select Btn Option -->
                                 </li>
                             </ul>
                         </div>
@@ -1007,7 +1041,7 @@
                                     </div>
 
                                     <p class="ml-1">
-                                        <strong>Fulfilled (1)</strong> #1043
+                                        <strong>Fulfilled (38)</strong> #1043
                                     </p>
                                 </div>
 
@@ -1176,13 +1210,13 @@
                                         Add Tracking
                                     </button>
 
+                                    <!-- Select Btn Option -->
                                     <button class="selectBtn ml-1">
                                         More
                                         <i
                                             class="ml-1 selectBtn__arrow fas fa-caret-down"
                                         ></i>
 
-                                        <!-- Select Btn Option -->
                                         <div
                                             class="selectBtn__options hide-item"
                                         >
@@ -1206,13 +1240,13 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <!-- End Select Btn Option -->
                                     </button>
+                                    <!-- End Select Btn Option -->
                                 </div>
                             </div>
 
                             <div
-                                class="singleOrder__main--card py-2 px-3 card my-2"
+                                class="singleOrder__main--card py-2 px-3 card mt-2"
                             >
                                 <div
                                     class="singleOrder__main--card--heading dflex justify-content-start align-items-center mb-2"
@@ -1223,9 +1257,7 @@
                                         <i class="fas fa-check text-white"></i>
                                     </div>
 
-                                    <p class="ml-1">
-                                        <strong>Paid</strong>
-                                    </p>
+                                    <h4 class="ml-1">Paid</h4>
                                 </div>
 
                                 <div>
@@ -1259,11 +1291,57 @@
                             </div>
                         </div>
                         <div class="singleOrder__sidebar">
-                            <div class="card notes">
-                                <p>Notes</p>
+                            <div
+                                class="singleOrder__sidebar--notes bg-white card py-2 px-3"
+                            >
+                                <h4>Notes</h4>
+                                <p class="mt-2">No notes from the Customer</p>
                             </div>
-                            <div class="card customer">
-                                <p>Customer</p>
+                            <div
+                                class="singleOrder__sidebar--customer bg-white card py-2 px-3 mt-2"
+                            >
+                                <div
+                                    class="dflex justify-content-between align-items-center"
+                                >
+                                    <h4>Customer</h4>
+                                    <div
+                                        class="singleOrder__sidebar--customer--imgWrapper"
+                                    >
+                                        <img
+                                            class="singleOrder__sidebar--customer--img"
+                                            src="./assets/avatar.jpg"
+                                            alt="avatar name"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="mb-2">
+                                    <a href="#">Zander Ford</a>
+                                </div>
+
+                                <hr />
+
+                                <p class="my-2">
+                                    <strong>CONTACT INFORMATION</strong>
+                                </p>
+                                <a href="#">rayjenscode@gmail.com</a>
+                                <p class="my-2">No phone number</p>
+
+                                <hr />
+                                <p class="my-2">
+                                    <strong>SHIPPING ADDRESS</strong>
+                                </p>
+                                <p>Rayjens Code</p>
+                                <p class="my-2">
+                                    Apple St. Obrero 9500 General Santos City
+                                    Philippines
+                                </p>
+
+                                <hr />
+                                <p class="my-2">
+                                    <strong>BILLING ADDRESS</strong>
+                                </p>
+                                <p>Same as Shipping address</p>
                             </div>
                         </div>
                     </div>

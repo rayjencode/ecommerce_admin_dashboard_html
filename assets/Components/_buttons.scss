@@ -11,7 +11,8 @@
     &:hover {
         background: $primary200;
     }
-    &:active {
+    &:active,
+    &:focus {
         background: $primary100;
     }
 }
@@ -24,6 +25,45 @@
     position: relative;
     color: $text200;
     background: white;
+
+    &__options {
+        top: 40px;
+        right: 0px;
+        border: 1px solid $border;
+        border-radius: 4px;
+        cursor: pointer;
+        position: absolute;
+        width: 170px;
+        color: $text200;
+        background: white;
+        box-shadow: $box-shadow-200;
+        &--list {
+            list-style: none;
+            margin-top: 7px;
+            margin-bottom: 7px;
+        }
+        &--item {
+            padding: 0.7rem 0;
+            &:hover {
+                background: $primary200;
+                color: white;
+            }
+        }
+    }
+}
+
+.selectBtnFlat {
+    border: none;
+    padding: 9px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    color: $text200;
+    background: none;
+    &:active,
+    &:focus {
+        background: $gray100;
+    }
 
     &__options {
         top: 40px;

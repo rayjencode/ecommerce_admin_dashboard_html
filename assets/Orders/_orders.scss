@@ -187,6 +187,18 @@
             }
         }
     }
+    &__sidebar {
+        &--customer {
+            &--imgWrapper {
+                width: 40px;
+                height: 40px;
+            }
+            &--img {
+                width: 100%;
+                border-radius: 50px;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {

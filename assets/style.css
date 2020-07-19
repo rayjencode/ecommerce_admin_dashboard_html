@@ -429,6 +429,10 @@
   color: #d63417;
 }
 
+.bg-white {
+  background: white;
+}
+
 header {
   /* grid-gap: 30px; */
   display: -ms-grid;
@@ -1085,7 +1089,7 @@ nav {
   background: #5463c1;
 }
 
-.btn-secondary:active {
+.btn-secondary:active, .btn-secondary:focus {
   background: #43467f;
 }
 
@@ -1124,6 +1128,49 @@ nav {
 }
 
 .selectBtn__options--item:hover {
+  background: #5463c1;
+  color: white;
+}
+
+.selectBtnFlat {
+  border: none;
+  padding: 9px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  color: #454f5b;
+  background: none;
+}
+
+.selectBtnFlat:active, .selectBtnFlat:focus {
+  background: #eeeeee;
+}
+
+.selectBtnFlat__options {
+  top: 40px;
+  right: 0px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  width: 170px;
+  color: #454f5b;
+  background: white;
+  -webkit-box-shadow: 0 2px 15px rgba(35, 40, 47, 0.25), 0 0 0 1px rgba(167, 176, 190, 0.1);
+          box-shadow: 0 2px 15px rgba(35, 40, 47, 0.25), 0 0 0 1px rgba(167, 176, 190, 0.1);
+}
+
+.selectBtnFlat__options--list {
+  list-style: none;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.selectBtnFlat__options--item {
+  padding: 0.7rem 0;
+}
+
+.selectBtnFlat__options--item:hover {
   background: #5463c1;
   color: white;
 }
@@ -1316,6 +1363,16 @@ nav {
   display: grid;
   -ms-grid-columns: 80px 1fr auto;
       grid-template-columns: 80px 1fr auto;
+}
+
+.singleOrder__sidebar--customer--imgWrapper {
+  width: 40px;
+  height: 40px;
+}
+
+.singleOrder__sidebar--customer--img {
+  width: 100%;
+  border-radius: 50px;
 }
 
 @media (max-width: 768px) {
