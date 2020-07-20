@@ -1201,7 +1201,9 @@
                                     <hr />
                                 </div>
                                 <div class="dflex justify-content-end mt-2">
-                                    <button class="btn btn-secondary ml-1">
+                                    <button
+                                        class="btn btn-secondary ml-1 hide-item"
+                                    >
                                         Mark as fulfilled
                                     </button>
 
@@ -1212,7 +1214,7 @@
                                     </button>
 
                                     <!-- Select Btn Option -->
-                                    <button class="selectBtn ml-1">
+                                    <button class="selectBtn ml-1 hide-item">
                                         More
                                         <i
                                             class="ml-1 selectBtn__arrow fas fa-caret-down"
@@ -1416,11 +1418,18 @@
                                 Processed by <strong>(PayPal) Gatway</strong>
                             </p>
                             <p class="my-2">VISA (••• •• 4242)</p>
-                            <input
-                                type="number"
-                                value="1012.71"
-                                class="input"
-                            />
+                            <div class="inputCurrency mb-2">
+                                <span class="inputCurrency__symbol"
+                                    >&#8369;</span
+                                >
+                                <input
+                                    type="number"
+                                    value="1012.71"
+                                    class="inputCurrency__input"
+                                />
+                                <span class="inputCurrency__currency">PHP</span>
+                            </div>
+
                             <hr />
 
                             <div

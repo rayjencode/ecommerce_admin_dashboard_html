@@ -1221,6 +1221,32 @@ nav {
   border: 2px solid #5463c1;
 }
 
+.inputCurrency {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  width: 50%;
+  min-width: 200px;
+  position: relative;
+}
+
+.inputCurrency__symbol {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+}
+
+.inputCurrency__input {
+  border: none;
+  width: 150px;
+  padding: 9px 15px 9px 30px;
+}
+
+.inputCurrency__currency {
+  position: absolute;
+  top: 5px;
+  left: 160px;
+}
+
 .inputSelect {
   position: relative;
 }

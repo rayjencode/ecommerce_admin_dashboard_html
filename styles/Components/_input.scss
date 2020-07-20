@@ -9,6 +9,34 @@
     }
 }
 
+.inputCurrency {
+    // padding: 9px 15px;
+    border: 1px solid $border;
+    border-radius: 4px;
+    width: 50%;
+    min-width: 200px;
+    position: relative;
+    &:active,
+    &:focus {
+        // border: 2px solid $primary200;
+    }
+    &__symbol {
+        position: absolute;
+        top: 5px;
+        left: 15px;
+    }
+    &__input {
+        border: none;
+        width: 150px;
+        padding: 9px 15px 9px 30px;
+    }
+    &__currency {
+        position: absolute;
+        top: 5px;
+        left: 160px;
+    }
+}
+
 .inputSelect {
     position: relative;
     &__input {
