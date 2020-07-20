@@ -8,7 +8,7 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
         />
-        <link rel="stylesheet" href="/assets/style.css" />
+        <link rel="stylesheet" href="/styles/style.css" />
         <title>Great Web Admin</title>
     </head>
     <body>
@@ -1206,7 +1206,7 @@
                                     </button>
 
                                     <button
-                                        class="btn btn-secondary ml-1 singleOrder__main--addTracking"
+                                        class="btn btn-secondary ml-1 singleOrder__main--modal--addEditTrackingBtn"
                                     >
                                         Add Tracking
                                     </button>
@@ -1283,10 +1283,18 @@
                                     </div>
                                     <hr />
                                     <div
-                                        class="dflex justify-content-between mt-2"
+                                        class="dflex justify-content-between my-2"
                                     >
                                         <p>Paid by Customer</p>
                                         <p>&#8369; 353,021.20</p>
+                                    </div>
+                                    <hr />
+                                    <div class="dflex justify-content-end mt-2">
+                                        <button
+                                            class="singleOrder__main--card--paymentDetails--captureBtn btn btn-secondary ml-auto"
+                                        >
+                                            Capture Payment
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -1347,11 +1355,13 @@
                         </div>
                     </div>
 
-                    <!-- Modal -->
-                    <div class="modal singleOrder__main--modal">
+                    <!-- Modal Add Edit Tracking -->
+                    <div
+                        class="modal singleOrder__main--modal--addEditTracking"
+                    >
                         <div class="modal__content">
                             <span
-                                class="modal__close singleOrder__main--modal--close"
+                                class="modal__close singleOrder__main--modal--addEditTracking--closeBtn"
                                 >&times;</span
                             >
                             <h3 class="mb-2">Edit Tracking</h3>
@@ -1381,13 +1391,53 @@
                             <div
                                 class="dflex justify-content-end align-items-center mt-2"
                             >
-                                <button class="btn btn-light mr-2">
+                                <button
+                                    class="btn btn-light mr-2 singleOrder__main--modal--addEditTracking--closeBtn"
+                                >
                                     Cancel
                                 </button>
                                 <button class="btn btn-secondary">Save</button>
                             </div>
                         </div>
                     </div>
+                    <!-- modal End Add Edit Tracking  -->
+
+                    <!-- Modal Capture Payment -->
+                    <div class="modal singleOrder__main--modal--capturePayment">
+                        <div class="modal__content">
+                            <span
+                                class="modal__close singleOrder__main--modal--close--capturePayment"
+                                >&times;</span
+                            >
+                            <h3 class="mb-2">Capture Payment</h3>
+                            <hr />
+
+                            <p class="mt-2">
+                                Processed by <strong>(PayPal) Gatway</strong>
+                            </p>
+                            <p class="my-2">VISA (••• •• 4242)</p>
+                            <input
+                                type="number"
+                                value="1012.71"
+                                class="input"
+                            />
+                            <hr />
+
+                            <div
+                                class="dflex justify-content-end align-items-center mt-2"
+                            >
+                                <button
+                                    class="singleOrder__main--modal--close--capturePayment btn btn-light mr-2"
+                                >
+                                    Cancel
+                                </button>
+                                <button class="btn btn-secondary">
+                                    Accept  &#8369; 21,012.7
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end capture payment  -->
                 </div>
                 <!-- End Single Order Page -->
                 <!-- ==================-->

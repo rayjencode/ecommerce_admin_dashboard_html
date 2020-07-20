@@ -1,0 +1,80 @@
+.home {
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-gap: 20px;
+
+        &--item {
+            background: $textwhite;
+        }
+        &--title {
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        &--count {
+            color: $primary;
+            font-size: 1.7rem;
+            font-weight: 700;
+            margin: 0.8rem 0;
+        }
+        &--view {
+            margin-top: 1rem;
+            text-align: right;
+            a {
+                color: $secondary;
+            }
+        }
+    }
+
+    &__table {
+        &--title {
+            color: $primary100;
+        }
+        &--heading {
+            color: $text400;
+            font-size: 1.1rem;
+            font-weight: 500;
+            display: grid;
+            // grid-template-columns: 150px 1fr 80px 100px;
+            grid-template-columns: 140px 1fr 80px 100px;
+        }
+        &--items {
+            display: grid;
+            grid-template-columns: 140px 1fr 80px 100px;
+            &:hover {
+                background: $gray100;
+                cursor: pointer;
+            }
+        }
+        &--toggleBtn {
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 600px) {
+    .home {
+        &__table {
+            &--heading {
+                grid-template-columns: 1fr 1fr 1fr;
+                &--col2 {
+                    display: none;
+                }
+            }
+            &--items {
+                grid-template-columns: 1fr 1fr 1fr;
+                &--col2 {
+                    display: none;
+                }
+                &--col1 {
+                    span:nth-last-child(1) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -112,9 +112,12 @@ nav {
         margin-top: 0;
         display: none;
         position: fixed;
-        background: $overlayBG;
         transition: 0.4s ease;
         z-index: 1;
+        background: $overlayBG;
+        background: $overlayBG-2;
+        // background-color: rgb(0, 0, 0); /* Fallback color */
+        // background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
     }
     .nav {
         &__wrapper {

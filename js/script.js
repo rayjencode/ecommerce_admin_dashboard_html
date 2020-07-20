@@ -9,38 +9,7 @@ const showProducts = document.querySelector('.nav__showProducts');
 const navOrdersList = document.querySelector('.nav__orders--items');
 const navProductsList = document.querySelector('.nav__products--items');
 
-// header profile
-const toggleProfileNav = document.querySelector('.header__profile');
-const showProfileNav = document.querySelector('.header__profile__name--nav');
-
-// toggle orders filter
-const showOrderFilter = document.querySelector(
-    '.orders__table--filter--listWrapper'
-);
-const toggleShowOrderFilter = document.querySelector(
-    '.orders__table--filter--collapseBtn'
-);
-
-// toggle abandoned orders filter
-const showAbandonedOrderFilter = document.querySelector(
-    '.abandoned__table--filter--listWrapper'
-);
-const toggleShowAbandonedOrderFilter = document.querySelector(
-    '.abandoned__table--filter--collapseBtn'
-);
-
-// Add/Edit tracking button single order page
-const showAddEditTrackingModal = document.querySelector(
-    '.singleOrder__main--modal'
-);
-const toggleShowAddEditTrackingModal = document.querySelector(
-    '.singleOrder__main--addTracking'
-);
-const closeShowAddEditTrackingModal = document.querySelector(
-    '.singleOrder__main--modal--close'
-);
-
-// Actions
+// Start nav Toggle
 navBtn.addEventListener('click', () => {
     console.log(`object`);
     nav.classList.toggle('show');
@@ -60,24 +29,83 @@ showProducts.addEventListener('click', () => {
     navProductsList.classList.toggle('show');
 });
 
+// End nav Toggle
+
+// Start Toggle Header profile
+const toggleProfileNav = document.querySelector('.header__profile');
+const showProfileNav = document.querySelector('.header__profile__name--nav');
 toggleProfileNav.addEventListener('click', () => {
     showProfileNav.classList.toggle('show');
 });
+// End Toggle Header profile
 
+// Start Toggle orders filter
+const showOrderFilter = document.querySelector(
+    '.orders__table--filter--listWrapper'
+);
+const toggleShowOrderFilter = document.querySelector(
+    '.orders__table--filter--collapseBtn'
+);
 toggleShowOrderFilter.addEventListener('click', () => {
     showOrderFilter.classList.toggle('show');
     console.log(`filter orders`);
 });
+// End Toggle orders filter
 
+// Start Toggle abandoned orders filter
+const showAbandonedOrderFilter = document.querySelector(
+    '.abandoned__table--filter--listWrapper'
+);
+const toggleShowAbandonedOrderFilter = document.querySelector(
+    '.abandoned__table--filter--collapseBtn'
+);
 toggleShowAbandonedOrderFilter.addEventListener('click', () => {
     console.log(`filter abandoned orders`);
     showAbandonedOrderFilter.classList.toggle('show');
 });
+// End Toggle abandoned orders filter
+
+// Start Add/Edit tracking button - Single order page
+const showAddEditTrackingModal = document.querySelector(
+    '.singleOrder__main--modal--addEditTracking'
+);
+const toggleShowAddEditTrackingModal = document.querySelector(
+    '.singleOrder__main--modal--addEditTrackingBtn'
+);
+const closeShowAddEditTrackingModal = document.querySelectorAll(
+    '.singleOrder__main--modal--addEditTracking--closeBtn'
+);
 
 toggleShowAddEditTrackingModal.addEventListener('click', () => {
     showAddEditTrackingModal.classList.toggle('show');
 });
 
-closeShowAddEditTrackingModal.addEventListener('click', () => {
-    showAddEditTrackingModal.classList.toggle('show');
+closeShowAddEditTrackingModal.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        showAddEditTrackingModal.classList.toggle('show');
+    });
 });
+
+// End Add/Edit tracking button - Single order page
+
+// Start Capture Payment Btn - Single Order Page
+const toggleShowCapturePaymentModal = document.querySelector(
+    '.singleOrder__main--card--paymentDetails--captureBtn'
+);
+const closeShowCapturePaymentModal = document.querySelectorAll(
+    '.singleOrder__main--modal--close--capturePayment'
+);
+const showCapturePaymentModal = document.querySelector(
+    '.singleOrder__main--modal--capturePayment'
+);
+
+toggleShowCapturePaymentModal.addEventListener('click', () => {
+    showCapturePaymentModal.classList.toggle('show');
+});
+closeShowCapturePaymentModal.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        showCapturePaymentModal.classList.toggle('show');
+    });
+});
+
+// End Capture Payment Btn
