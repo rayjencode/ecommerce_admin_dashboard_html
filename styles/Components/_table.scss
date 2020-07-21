@@ -59,6 +59,9 @@
                 position: absolute;
             }
         }
+        &--option {
+            font-size: 1.1rem;
+        }
         &--input {
             &--icon {
                 top: 12px;
@@ -91,6 +94,7 @@
         gap: 10px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        align-items: center;
         // grid-template-columns: 80px 1fr 1fr 1fr 1fr 40px 100px;
         &--indicator {
             font-size: 0.7rem;

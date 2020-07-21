@@ -4,6 +4,27 @@
     border-radius: 4px;
     cursor: pointer;
 }
+.btn-icon {
+    border: 1px solid $border;
+    background: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    color: $gray;
+    cursor: pointer;
+}
+.btn-icon-success {
+    &:hover {
+        background: $success;
+        color: white;
+    }
+}
+.btn-icon-danger {
+    &:hover {
+        background: $danger;
+        color: white;
+    }
+}
 
 .btn-block {
     width: 100%;
@@ -31,6 +52,18 @@
     &:active,
     &:focus {
         background: $gray100;
+    }
+}
+
+.btn-danger {
+    border: 1px solid $danger;
+    background: $danger;
+    color: white;
+    &:hover {
+        background: $danger100;
+    }
+    &:active {
+        background: $danger;
     }
 }
 

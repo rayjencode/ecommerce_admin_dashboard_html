@@ -365,6 +365,7 @@
                 <!-- Orders Page -->
                 <div class="orders hide-item">
                     <h2 class="my-3">Orders</h2>
+
                     <div class="table card px-3 py-2 my-3">
                         <div class="table--filter mb-2">
                             <span
@@ -950,7 +951,7 @@
 
                 <!-- ==================-->
                 <!-- Single Order Page -->
-                <div class="singleOrder">
+                <div class="singleOrder hide-item">
                     <div class="singleOrder__header">
                         <div class="breadcramb mt-3">
                             <i class="fas fa-angle-left mr-1"></i>Orders
@@ -1201,9 +1202,7 @@
                                     <hr />
                                 </div>
                                 <div class="dflex justify-content-end mt-2">
-                                    <button
-                                        class="btn btn-secondary ml-1 hide-item"
-                                    >
+                                    <button class="btn btn-secondary ml-1">
                                         Mark as fulfilled
                                     </button>
 
@@ -1214,7 +1213,7 @@
                                     </button>
 
                                     <!-- Select Btn Option -->
-                                    <button class="selectBtn ml-1 hide-item">
+                                    <button class="selectBtn ml-1">
                                         More
                                         <i
                                             class="ml-1 selectBtn__arrow fas fa-caret-down"
@@ -1614,7 +1613,18 @@
                                     <input class="input" type="text" />
                                 </div>
                                 <!-- Select Input Option -->
-                                <div class="inputSelect">
+                                <div>
+                                    <p class="mt-1">Shipping Carrier</p>
+                                    <select class="input my-1">
+                                        <option value="None">None</option>
+                                        <option value="None">LBC Padala</option>
+                                        <option value="None">J&T</option>
+                                        <option value="None">RJS</option>
+                                        <option value="None">DHL</option>
+                                        <option value="None">FedEx</option>
+                                    </select>
+                                </div>
+                                <!-- <div class="inputSelect">
                                     <p class="my-1">Shipping Carrier</p>
                                     <input
                                         class="inputSelect__input"
@@ -1653,7 +1663,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             <hr />
                             <div class="fulfillment__main--notify mt-2">
@@ -1695,6 +1705,416 @@
                     </div>
                 </div>
                 <!-- fulfillment page -->
+                <!-- ==================-->
+
+                <!-- ==================-->
+                <!-- Collection Create page -->
+                <div class="collections-create hide-item">
+                    <div
+                        class="collections-create__titlebar dflex justify-content-between align-items-center"
+                    >
+                        <div class="collections-create__titlebar--item">
+                            <div class="breadcramb mt-3">
+                                <i class="fas fa-angle-left mr-1"></i
+                                >Collections
+                            </div>
+                            <h1 class="my-1">Create Collections</h1>
+                        </div>
+                        <div class="collections-create__titlebar--item">
+                            <button class="btn btn-light">Discard</button>
+                            <button class="btn btn-secondary ml-1">Save</button>
+                        </div>
+                    </div>
+
+                    <div class="collections-create__cardWrapper mt-2">
+                        <div class="collections-create__main">
+                            <div
+                                class="collections-create__main--addInfo card py-2 px-2 bg-white"
+                            >
+                                <p class="mb-1">Title</p>
+                                <input
+                                    type="text"
+                                    placeholder="e.g. Summer Collection, Under $100, Best picks"
+                                    class="input"
+                                />
+
+                                <p class="my-1">Description (optional)</p>
+                                <textarea
+                                    cols="30"
+                                    rows="10"
+                                    class="textarea"
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div class="collections-create__sidebar">
+                            <div class="card py-2 px-2 bg-white">
+                                <h3>Collection Image</h3>
+                                <form
+                                    class="collections-create__sidebar--form mt-2"
+                                >
+                                    <label
+                                        class="collections-create__sidebar--form--label"
+                                        for="myfile"
+                                        >Add Image</label
+                                    >
+                                    <input
+                                        class="collections-create__sidebar--form--input"
+                                        type="file"
+                                        id="myfile"
+                                        name="myfile"
+                                    />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Collection-create page -->
+                <!-- ==================-->
+
+                <!-- ==================-->
+                <!-- Collection Edit page -->
+                <div class="collections__edit hide-item">
+                    <div
+                        class="collections__edit__titlebar dflex justify-content-between align-items-center"
+                    >
+                        <div class="collections__edit__titlebar--item">
+                            <div class="breadcramb mt-3">
+                                <i class="fas fa-angle-left mr-1"></i
+                                >Collections
+                            </div>
+                            <h1 class="my-1">Appliances</h1>
+                        </div>
+                        <div class="collections__edit__titlebar--item">
+                            <button class="btn btn-danger">
+                                Delete collection
+                            </button>
+                            <button class="btn btn-secondary ml-1">Save</button>
+                        </div>
+                    </div>
+
+                    <div class="collections__edit__cardWrapper mt-2">
+                        <div class="collections__edit__main">
+                            <div
+                                class="collections__edit__main--addInfo card py-2 px-2 bg-white"
+                            >
+                                <p class="mb-1">Title</p>
+                                <input
+                                    type="text"
+                                    placeholder="e.g. Summer Collection, Under $100, Best picks"
+                                    class="input"
+                                />
+
+                                <p class="my-1">Description (optional)</p>
+                                <textarea
+                                    cols="30"
+                                    rows="10"
+                                    class="textarea"
+                                ></textarea>
+                            </div>
+                            <div
+                                class="collections__edit__main--products card py-2 px-2 mt-2 bg-white"
+                            >
+                                <h3>Products</h3>
+                                <div
+                                    class="collections__edit__main--products--filter my-2"
+                                >
+                                    <div class="inputBrowse">
+                                        <i
+                                            class="inputBrowse__icon fas fa-search"
+                                        ></i>
+                                        <input
+                                            type="text"
+                                            placeholder="Search products"
+                                            class="inputBrowse__input"
+                                        />
+                                    </div>
+                                    <button class="btn btn-light">
+                                        Browse
+                                    </button>
+                                </div>
+
+                                <hr />
+
+                                <ul class="list-unstyled">
+                                    <li
+                                        class="collections__edit__main--products--item"
+                                    >
+                                        <p>1.</p>
+                                        <div
+                                            class="collections__edit__main--products--item--imgWrapper"
+                                        >
+                                            <img
+                                                class="collections__edit__main--products--item--img"
+                                                src="./assets//images/6-1.jpg"
+                                                alt="collection img"
+                                            />
+                                        </div>
+                                        <a href="#"
+                                            >Super Super Extrme Nike Sports</a
+                                        >
+                                        <span
+                                            class="collections__edit__main--products--item--delete"
+                                        >
+                                            <i class="fas fa-times"></i>
+                                        </span>
+                                    </li>
+                                    <hr />
+                                    <li
+                                        class="collections__edit__main--products--item"
+                                    >
+                                        <p>2.</p>
+                                        <div
+                                            class="collections__edit__main--products--item--imgWrapper"
+                                        >
+                                            <img
+                                                class="collections__edit__main--products--item--img"
+                                                src="./assets//images/6-2.jpg"
+                                                alt="collection img"
+                                            />
+                                        </div>
+                                        <a href="#"
+                                            >Super Super Extrme Nike Sports</a
+                                        >
+                                        <span
+                                            class="collections__edit__main--products--item--delete"
+                                        >
+                                            <i class="fas fa-times"></i>
+                                        </span>
+                                    </li>
+                                    <hr />
+                                    <li
+                                        class="collections__edit__main--products--item"
+                                    >
+                                        <p>3.</p>
+                                        <div
+                                            class="collections__edit__main--products--item--imgWrapper"
+                                        >
+                                            <img
+                                                class="collections__edit__main--products--item--img"
+                                                src="./assets//images/5-1.jpg"
+                                                alt="collection img"
+                                            />
+                                        </div>
+                                        <a href="#"
+                                            >Super Super Extrme Nike Sports</a
+                                        >
+                                        <span
+                                            class="collections__edit__main--products--item--delete"
+                                        >
+                                            <i class="fas fa-times"></i>
+                                        </span>
+                                    </li>
+                                    <hr />
+                                    <li
+                                        class="collections__edit__main--products--item"
+                                    >
+                                        <p>4.</p>
+                                        <div
+                                            class="collections__edit__main--products--item--imgWrapper"
+                                        >
+                                            <img
+                                                class="collections__edit__main--products--item--img"
+                                                src="./assets//images/5-2.jpg"
+                                                alt="collection img"
+                                            />
+                                        </div>
+                                        <a href="#"
+                                            >Super Super Extrme Nike Sports</a
+                                        >
+                                        <span
+                                            class="collections__edit__main--products--item--delete"
+                                        >
+                                            <i class="fas fa-times"></i>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collections__edit__sidebar">
+                            <div class="card py-2 px-2 bg-white">
+                                <h3>Collection Image</h3>
+                                <form
+                                    class="collections__edit__sidebar--form my-2"
+                                >
+                                    <label
+                                        class="collections__edit__sidebar--form--label"
+                                        for="myfile"
+                                        >Add Image</label
+                                    >
+                                    <input
+                                        class="collections__edit__sidebar--form--input"
+                                        type="file"
+                                        id="myfile"
+                                        name="myfile"
+                                    />
+                                </form>
+                                <div
+                                    class="collections__edit__sidebar--imgWrapper"
+                                >
+                                    <img
+                                        class="collections__edit__sidebar--img"
+                                        src="./assets/images/11.jpg"
+                                        alt="tv"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Collection-Edit page -->
+                <!-- ==================-->
+
+                <!-- ==================-->
+                <!-- Collection List View -->
+                <div class="collections">
+                    <div
+                        class="collections__titlebar dflex justify-content-between align-items-center"
+                    >
+                        <div class="collections__titlebar--item">
+                            <div class="breadcramb mt-3">
+                                <i class="fas fa-angle-left mr-1"></i>Products
+                            </div>
+                            <h1 class="my-1">Collections</h1>
+                        </div>
+                        <div class="collections__titlebar--item">
+                            <button class="btn btn-secondary ml-1">
+                                Create Collection
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="table card px-3 py-2 my-3">
+                        <div class="table--filter mb-2">
+                            <span
+                                class="table--filter--collapseBtn orders__table--filter--collapseBtn"
+                            >
+                                <i class="fas fa-ellipsis-h"></i>
+                            </span>
+                            <div
+                                class="table--filter--listWrapper orders__table--filter--listWrapper"
+                            >
+                                <ul
+                                    class="table--filter--list list-unstyled dflex justify-content-start"
+                                >
+                                    <li>
+                                        <p
+                                            class="table--filter--link table--filter--link--active"
+                                        >
+                                            All Collections
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="table--search my-3">
+                            <div class="table--search--wrapper">
+                                <select
+                                    class="table--search--select py-1 px-2"
+                                    name=""
+                                    id=""
+                                >
+                                    <option
+                                        class="table--search--option"
+                                        value=""
+                                        >Filter</option
+                                    >
+                                    <option
+                                        class="table--search--option"
+                                        value=""
+                                        >Collections A-Z</option
+                                    >
+                                    <option
+                                        class="table--search--option"
+                                        value=""
+                                        >Collections Z-A</option
+                                    >
+                                    <option
+                                        class="table--search--option"
+                                        value=""
+                                        >Most Viewed</option
+                                    >
+                                    <option
+                                        class="table--search--option"
+                                        value=""
+                                        >Less Viewed</option
+                                    >
+                                </select>
+                                <span class="table--search--select--arrow">
+                                    <i class="fas fa-caret-down"></i>
+                                </span>
+                            </div>
+                            <div class="relative">
+                                <i
+                                    class="table--search--input--icon fas fa-search absolute"
+                                ></i>
+                                <input
+                                    class="table--search--input py-1 pl-4 pr-2"
+                                    type="text"
+                                    placeholder="Search orders"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="table--heading my-2 collections__heading">
+                            <p class="table--heading--col1">Image</p>
+                            <p class="table--heading--col2">
+                                Title
+                            </p>
+                            <p
+                                class="table--heading--col3 collections__heading--count"
+                            >
+                                Count
+                            </p>
+                            <p class="table--heading--col4">Actions</p>
+                        </div>
+                        <hr />
+
+                        <!-- Order 1 -->
+                        <div class="table--items py-1 collections__items">
+                            <div class="collections__items--imgWrapper">
+                                <img
+                                    class="collections__items--img"
+                                    src="./assets/images/3.jpg"
+                                    alt="3"
+                                />
+                            </div>
+                            <p class="table--items--col2">
+                                Super Extreme Nike Sports
+                            </p>
+                            <p class="table--items--col3">
+                                3
+                            </p>
+                            <div>
+                                <button class="btn-icon btn-icon-success">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </button>
+                                <button class="btn-icon btn-icon-danger">
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <hr />
+
+                        <!-- Paginate -->
+                        <div
+                            class="paginate dflex justify-content-between align-items-center mt-2"
+                        >
+                            <i class="paginate__icon fas fa-angle-left"></i>
+                            <i
+                                class="paginate__icon fas fa-angle-double-left"
+                            ></i>
+                            <p class="paginate__text">Page 1 of 1</p>
+                            <i
+                                class="paginate__icon fas fa-angle-double-right"
+                            ></i>
+                            <i class="paginate__icon fas fa-angle-right"></i>
+                        </div>
+                        <!-- End Paginate -->
+                    </div>
+                </div>
+
+                <!-- End Collection List View -->
                 <!-- ==================-->
             </div>
             <!-- End Main Content -->

@@ -3,7 +3,7 @@ nav {
     /* position: fixed; */
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 3;
     /* border-right: 1.3px solid var(--border);  */
 }
 .nav {
@@ -113,7 +113,6 @@ nav {
         display: none;
         position: fixed;
         transition: 0.4s ease;
-        z-index: 1;
         background: $overlayBG;
         background: $overlayBG-2;
         // background-color: rgb(0, 0, 0); /* Fallback color */

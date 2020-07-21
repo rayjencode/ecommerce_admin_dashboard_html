@@ -1,0 +1,267 @@
+.collections-create {
+    max-width: 968px;
+    margin: 0 auto;
+    &__cardWrapper {
+        display: grid;
+        grid-template-columns: 1fr minmax(auto, 290px);
+        grid-gap: 20px;
+    }
+    &__main {
+        &--products {
+            &--filter {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-gap: 20px;
+                align-items: center;
+            }
+        }
+    }
+    &__sidebar {
+        &--form {
+            border: 2px dashed $gray;
+            position: relative;
+            height: 200px;
+            cursor: pointer;
+
+            &--label {
+                border: 1px solid $text300;
+                padding: 9px 15px;
+                border-radius: 4px;
+                position: absolute;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &--input {
+                // position: absolute;
+                // top: 50%;
+                // left: 50%;
+                // transform: translate(-50%, -50%);
+                height: 200px;
+                opacity: 0;
+                width: 100%;
+                cursor: pointer;
+            }
+            &:hover {
+                border: 2px dashed $primary100;
+                background: $primary400;
+            }
+        }
+
+        &--btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .collections-create {
+        &__cardWrapper {
+            grid-template-columns: 1fr;
+        }
+        &__main {
+            &--products {
+                &--filter {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .collections-create {
+        &__titlebar {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-top: 40px;
+            &--item {
+                &:last-child {
+                    position: fixed;
+                    text-align: end;
+                    top: 50px;
+                    right: 0px;
+
+                    background: white;
+                    padding: 9px 15px;
+                    width: 100%;
+                    box-shadow: $box-shadow-200;
+                    // bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+/**********************
+* COLLECTIONS EDIT
+**********************/
+
+.collections__edit {
+    max-width: 968px;
+    margin: 0 auto;
+    &__cardWrapper {
+        display: grid;
+        grid-template-columns: 1fr minmax(auto, 290px);
+        grid-gap: 20px;
+    }
+
+    &__main {
+        &--products {
+            &--filter {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-gap: 20px;
+                align-items: center;
+            }
+            &--item {
+                display: grid;
+                grid-template-columns: 20px 70px 1fr 15px;
+                align-items: center;
+                &--img {
+                    width: 100%;
+                }
+                &--delete {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &__sidebar {
+        &--form {
+            border: 2px dashed $gray;
+            position: relative;
+            height: 200px;
+            cursor: pointer;
+
+            &--label {
+                border: 1px solid $text300;
+                padding: 9px 15px;
+                border-radius: 4px;
+                position: absolute;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &--input {
+                // position: absolute;
+                // top: 50%;
+                // left: 50%;
+                // transform: translate(-50%, -50%);
+                height: 200px;
+                opacity: 0;
+                width: 100%;
+                cursor: pointer;
+            }
+            &:hover {
+                border: 2px dashed $primary100;
+                background: $primary400;
+            }
+        }
+
+        &--btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &--imgWrapper {
+            border: 1px solid $border;
+        }
+        &--img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .collections__edit {
+        &__cardWrapper {
+            grid-template-columns: 1fr;
+        }
+        &__main {
+            &--products {
+                &--filter {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .collections__edit {
+        &__titlebar {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-top: 40px;
+            &--item {
+                &:last-child {
+                    position: fixed;
+                    text-align: end;
+                    top: 50px;
+                    right: 0px;
+                    z-index: 2;
+                    background: white;
+                    padding: 9px 15px;
+                    width: 100%;
+                    box-shadow: $box-shadow-200;
+                    // bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.collections {
+    &__heading {
+        grid-template-columns: 80px 1fr 100px 100px;
+    }
+    &__items {
+        grid-template-columns: 80px 1fr 100px 100px;
+        &--imgWrapper {
+            max-width: 45px;
+            min-width: 45px;
+        }
+        &--img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .collections {
+        &__heading {
+            grid-template-columns: auto auto auto auto;
+        }
+        &__items {
+            grid-template-columns: auto auto auto auto;
+        }
+        &__titlebar {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-top: 40px;
+            &--item {
+                &:last-child {
+                    position: fixed;
+                    text-align: end;
+                    top: 50px;
+                    right: 0px;
+                    z-index: 2;
+                    background: white;
+                    padding: 9px 15px;
+                    width: 100%;
+                    box-shadow: $box-shadow-200;
+                    // bottom: 1rem;
+                }
+            }
+        }
+    }
+}

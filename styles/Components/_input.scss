@@ -9,16 +9,116 @@
     }
 }
 
+.textarea {
+    padding: 9px 15px;
+    border: 1px solid $border;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1.1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    &:active,
+    &:focus {
+        border: 2px solid $primary200;
+    }
+}
+
+.inputBrowse {
+    // border: 1px solid $border;
+
+    position: relative;
+    // padding: 9px 15px;
+    &__icon {
+        position: absolute;
+        top: 11px;
+        left: 13px;
+        color: $text300;
+    }
+    &__input {
+        // border: none;
+        width: 100%;
+        padding: 9px 15px 9px 40px;
+        // border-left: 1px solid $border;
+        // border-top: 1px solid $border;
+        // border-bottom: 1px solid $border;
+        // border-right: none;
+
+        // border-top-left-radius: 4px;
+        // border-bottom-left-radius: 4px;
+        border: 2px solid $border;
+        border-radius: 4px;
+
+        &:active,
+        &:focus {
+            border: 2px solid $primary200;
+        }
+    }
+
+    &__btn {
+        color: $text300;
+        // position: absolute;
+        padding: 9px 15px;
+
+        border-right: 1px solid $border;
+        border-top: 1px solid $border;
+        border-bottom: 1px solid $border;
+        border-left: none;
+
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        cursor: pointer;
+        &:hover {
+            background: $gray300;
+        }
+        &:active {
+            background: $gray100;
+        }
+    }
+}
+
+// .inputBrowse {
+//     // padding: 9px 15px;
+
+//     border: 1px solid $border;
+//     border-radius: 4px;
+//     // width: 100%;
+//     min-width: 200px;
+//     max-width: 200px;
+//     position: relative;
+//     &:hover,
+//     &:active,
+//     &:focus {
+//         border: 2px solid $primary200;
+//     }
+//     &__icon {
+//         position: absolute;
+//         top: 5px;
+//         left: 15px;
+//     }
+//     &__input {
+//         border: none;
+//         width: 150px;
+//         padding: 9px 15px 9px 30px;
+//     }
+//     &__btn {
+//         position: absolute;
+//         top: 5px;
+//         left: 160px;
+//     }
+// }
 .inputCurrency {
     // padding: 9px 15px;
-    border: 1px solid $border;
+
+    border: 2px solid $border;
     border-radius: 4px;
     width: 50%;
     min-width: 200px;
+    max-width: 200px;
     position: relative;
+    &:hover,
     &:active,
     &:focus {
-        // border: 2px solid $primary200;
+        border: 2px solid $primary200;
     }
     &__symbol {
         position: absolute;
@@ -38,6 +138,22 @@
 }
 
 .inputSelect {
+    padding: 9px 15px;
+    border: 1px solid $border;
+    border-radius: 4px;
+    width: 100%;
+    color: $text200;
+    min-width: 200px;
+    &:active,
+    &:focus {
+        border: 2px solid $primary200;
+    }
+    &__option {
+        font-size: 1.1rem;
+    }
+}
+
+.inputSelect-2 {
     position: relative;
     &__input {
         padding: 9px 15px;
