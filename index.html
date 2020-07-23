@@ -2172,7 +2172,7 @@
                 <!-- Products -->
 
                 <div class="products">
-                    <div class="products__empty">
+                    <div class="products__empty hide-item">
                         <h2 class="my-2">Products</h2>
                         <hr />
 
@@ -2205,6 +2205,316 @@
                                     alt="busy"
                                 />
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="products__list">
+                        <div
+                            class="products__titlebar dflex justify-content-between align-items-center mt-2"
+                        >
+                            <div class="products__titlebar--item">
+                                <h1 class="my-1">Products</h1>
+                            </div>
+                            <div class="products__titlebar--item">
+                                <button class="btn btn-secondary ml-1">
+                                    Create Products
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="table card px-3 py-2 my-3">
+                            <div class="table--filter mb-2">
+                                <span
+                                    class="table--filter--collapseBtn orders__table--filter--collapseBtn"
+                                >
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </span>
+                                <div
+                                    class="table--filter--listWrapper orders__table--filter--listWrapper"
+                                >
+                                    <ul
+                                        class="table--filter--list list-unstyled dflex justify-content-start"
+                                    >
+                                        <li>
+                                            <p
+                                                class="table--filter--link table--filter--link--active"
+                                            >
+                                                All Products
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="table--filter--link">
+                                                Unpublish
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="table--search my-3">
+                                <div class="table--search--wrapper">
+                                    <select
+                                        class="table--search--select py-1 px-2"
+                                        name=""
+                                        id=""
+                                    >
+                                        <option
+                                            class="table--search--option"
+                                            value=""
+                                            >Filter</option
+                                        >
+                                        <option
+                                            class="table--search--option"
+                                            value=""
+                                            >Collections A-Z</option
+                                        >
+                                        <option
+                                            class="table--search--option"
+                                            value=""
+                                            >Collections Z-A</option
+                                        >
+                                        <option
+                                            class="table--search--option"
+                                            value=""
+                                            >Most Viewed</option
+                                        >
+                                        <option
+                                            class="table--search--option"
+                                            value=""
+                                            >Less Viewed</option
+                                        >
+                                    </select>
+                                    <span class="table--search--select--arrow">
+                                        <i class="fas fa-caret-down"></i>
+                                    </span>
+                                </div>
+                                <div class="relative">
+                                    <i
+                                        class="table--search--input--icon fas fa-search absolute"
+                                    ></i>
+                                    <input
+                                        class="table--search--input py-1 pl-4 pr-2"
+                                        type="text"
+                                        placeholder="Search orders"
+                                    />
+                                </div>
+                            </div>
+
+                            <div
+                                class="table--heading my-2 products__list__heading"
+                            >
+                                <!-- <p class="table--heading--col1">&#32;</p> -->
+                                <p class="table--heading--col1">image</p>
+                                <p class="table--heading--col2">
+                                    Product
+                                </p>
+
+                                <p class="table--heading--col4">Type</p>
+                                <p class="table--heading--col3">
+                                    Inventory
+                                </p>
+                                <!-- <p class="table--heading--col5">&#32;</p> -->
+                                <p class="table--heading--col5">actions</p>
+                            </div>
+                            <hr />
+
+                            <!-- product 1 -->
+                            <div class="table--items py-1 products__list__item">
+                                <div class="products__list__item--imgWrapper">
+                                    <img
+                                        class="products__list__item--img"
+                                        src="./assets/images/7-1.jpg"
+                                        alt="3"
+                                    />
+                                </div>
+                                <a href="#" class="table--items--col2">
+                                    Super Extreme Nike Sports
+                                </a>
+
+                                <p class="table--items--col2">
+                                    Shoes
+                                </p>
+                                <p class="table--items--col3">
+                                    3
+                                </p>
+                                <div>
+                                    <button class="btn-icon btn-icon-success">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </button>
+                                    <button class="btn-icon btn-icon-danger">
+                                        <i class="far fa-trash-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <hr />
+
+                            <!-- product 2 -->
+                            <div class="table--items py-1 products__list__item">
+                                <div class="products__list__item--imgWrapper">
+                                    <img
+                                        class="products__list__item--img"
+                                        src="./assets/images/7-1.jpg"
+                                        alt="3"
+                                    />
+                                </div>
+                                <a href="#" class="table--items--col2">
+                                    Super Extreme Nike Sports
+                                </a>
+
+                                <p class="table--items--col2">
+                                    Shoes
+                                </p>
+                                <p class="table--items--col3">
+                                    3
+                                </p>
+                                <div>
+                                    <button class="btn-icon btn-icon-success">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </button>
+                                    <button class="btn-icon btn-icon-danger">
+                                        <i class="far fa-trash-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <hr />
+
+                            <!-- product 3 -->
+                            <div class="table--items py-1 products__list__item">
+                                <div class="products__list__item--imgWrapper">
+                                    <img
+                                        class="products__list__item--img"
+                                        src="./assets/images/7-1.jpg"
+                                        alt="3"
+                                    />
+                                </div>
+                                <a href="#" class="table--items--col2">
+                                    Super Extreme Nike Sports
+                                </a>
+
+                                <p class="table--items--col2">
+                                    Shoes
+                                </p>
+                                <p class="table--items--col3">
+                                    3
+                                </p>
+                                <div>
+                                    <button class="btn-icon btn-icon-success">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </button>
+                                    <button class="btn-icon btn-icon-danger">
+                                        <i class="far fa-trash-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <hr />
+
+                            <!-- product 4 -->
+                            <div class="table--items py-1 products__list__item">
+                                <div class="products__list__item--imgWrapper">
+                                    <img
+                                        class="products__list__item--img"
+                                        src="./assets/images/7-1.jpg"
+                                        alt="3"
+                                    />
+                                </div>
+                                <a href="#" class="table--items--col2">
+                                    Super Extreme Nike Sports
+                                </a>
+
+                                <p class="table--items--col2">
+                                    Shoes
+                                </p>
+                                <p class="table--items--col3">
+                                    3
+                                </p>
+                                <div>
+                                    <button class="btn-icon btn-icon-success">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </button>
+                                    <button class="btn-icon btn-icon-danger">
+                                        <i class="far fa-trash-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <hr />
+
+                            <!-- product 5 -->
+                            <div class="table--items py-1 products__list__item">
+                                <div class="products__list__item--imgWrapper">
+                                    <img
+                                        class="products__list__item--img"
+                                        src="./assets/images/7-1.jpg"
+                                        alt="3"
+                                    />
+                                </div>
+                                <a href="#" class="table--items--col2">
+                                    Super Extreme Nike Sports
+                                </a>
+
+                                <p class="table--items--col2">
+                                    Shoes
+                                </p>
+                                <p class="table--items--col3">
+                                    3
+                                </p>
+                                <div>
+                                    <button class="btn-icon btn-icon-success">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </button>
+                                    <button class="btn-icon btn-icon-danger">
+                                        <i class="far fa-trash-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <hr />
+
+                            <!-- product 6 -->
+                            <div class="table--items py-1 products__list__item">
+                                <div class="products__list__item--imgWrapper">
+                                    <img
+                                        class="products__list__item--img"
+                                        src="./assets/images/7-1.jpg"
+                                        alt="3"
+                                    />
+                                </div>
+                                <a href="#" class="table--items--col2">
+                                    Super Extreme Nike Sports
+                                </a>
+
+                                <p class="table--items--col2">
+                                    Shoes
+                                </p>
+                                <p class="table--items--col3">
+                                    3
+                                </p>
+                                <div>
+                                    <button class="btn-icon btn-icon-success">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </button>
+                                    <button class="btn-icon btn-icon-danger">
+                                        <i class="far fa-trash-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <hr />
+
+                            <!-- Paginate -->
+                            <div
+                                class="paginate dflex justify-content-between align-items-center mt-2"
+                            >
+                                <i class="paginate__icon fas fa-angle-left"></i>
+                                <i
+                                    class="paginate__icon fas fa-angle-double-left"
+                                ></i>
+                                <p class="paginate__text">Page 1 of 1</p>
+                                <i
+                                    class="paginate__icon fas fa-angle-double-right"
+                                ></i>
+                                <i
+                                    class="paginate__icon fas fa-angle-right"
+                                ></i>
+                            </div>
+                            <!-- End Paginate -->
                         </div>
                     </div>
                 </div>
