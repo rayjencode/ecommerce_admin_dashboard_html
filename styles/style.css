@@ -995,6 +995,10 @@ nav {
   color: #d4d4d4;
 }
 
+.table--search--input:focus {
+  border: 2px solid #5463c1;
+}
+
 .table--heading {
   gap: 10px;
   display: -ms-grid;

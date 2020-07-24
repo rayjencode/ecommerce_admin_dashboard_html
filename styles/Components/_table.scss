@@ -79,6 +79,9 @@
             &::placeholder {
                 color: $gray200;
             }
+            &:focus {
+                border: 2px solid $primary200;
+            }
         }
     }
     &--heading {
