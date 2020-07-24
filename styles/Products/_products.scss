@@ -35,6 +35,52 @@
             }
         }
     }
+    &__create {
+        max-width: 968px;
+        margin: 0 auto;
+        &__cardWrapper {
+            display: grid;
+            grid-template-columns: 1fr minmax(auto, 290px);
+            grid-gap: 20px;
+        }
+        &__sidebar {
+            &--form {
+                border: 2px dashed $gray;
+                position: relative;
+                height: 200px;
+                cursor: pointer;
+
+                &--label {
+                    border: 1px solid $text300;
+                    padding: 9px 15px;
+                    border-radius: 4px;
+                    position: absolute;
+                    text-align: center;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                &--input {
+                    height: 200px;
+                    opacity: 0;
+                    width: 100%;
+                    cursor: pointer;
+                }
+                &:hover {
+                    border: 2px dashed $primary100;
+                    background: $primary400;
+                }
+            }
+
+            &--btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
 }
 
 @media (max-width: 1068px) {
@@ -68,6 +114,11 @@
                 grid-template-columns: auto 1fr auto auto auto;
             }
         }
+        &__create {
+            &__cardWrapper {
+                grid-template-columns: 1fr;
+            }
+        }
     }
 }
 
@@ -89,6 +140,28 @@
                     width: 100%;
                     box-shadow: $box-shadow-200;
                     // bottom: 1rem;
+                }
+            }
+        }
+
+        &__create {
+            &__titlebar {
+                display: grid;
+                grid-template-columns: 1fr;
+                margin-top: 40px;
+                &--item {
+                    &:last-child {
+                        position: fixed;
+                        text-align: end;
+                        top: 50px;
+                        right: 0px;
+
+                        background: white;
+                        padding: 9px 15px;
+                        width: 100%;
+                        box-shadow: $box-shadow-200;
+                        // bottom: 1rem;
+                    }
                 }
             }
         }

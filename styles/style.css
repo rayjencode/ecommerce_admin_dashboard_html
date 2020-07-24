@@ -1278,6 +1278,36 @@ nav {
   border: 2px solid #5463c1;
 }
 
+.inputAdd {
+  padding: 9px 15px;
+  border-top: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  border-right: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  width: 100%;
+}
+
+.inputAdd:active, .inputAdd:focus {
+  border-top: 1px solid #5463c1;
+  border-left: 1px solid #5463c1;
+  border-bottom: 1px solid #5463c1;
+}
+
+.inputAdd__Btn {
+  background: #5463c1;
+  color: white;
+  border-top: 1px solid #5463c1;
+  border-right: 1px solid #5463c1;
+  border-bottom: 1px solid #5463c1;
+  border-left: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 9px 15px;
+  cursor: pointer;
+}
+
 .textarea {
   padding: 9px 15px;
   border: 1px solid #e0e0e0;
@@ -1479,6 +1509,74 @@ nav {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  border: 1px solid #e0e0e0;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  border: 2px solid #5463c1;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #5463c1;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .home__cards {
@@ -2102,6 +2200,58 @@ nav {
   width: 100%;
 }
 
+.products__create {
+  max-width: 968px;
+  margin: 0 auto;
+}
+
+.products__create__cardWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr minmax(auto, 290px);
+      grid-template-columns: 1fr minmax(auto, 290px);
+  grid-gap: 20px;
+}
+
+.products__create__sidebar--form {
+  border: 2px dashed #6a727a;
+  position: relative;
+  height: 200px;
+  cursor: pointer;
+}
+
+.products__create__sidebar--form--label {
+  border: 1px solid #6a727a;
+  padding: 9px 15px;
+  border-radius: 4px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.products__create__sidebar--form--input {
+  height: 200px;
+  opacity: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.products__create__sidebar--form:hover {
+  border: 2px dashed #43467f;
+  background: #eff1ff;
+}
+
+.products__create__sidebar--btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 @media (max-width: 1068px) {
   .products__empty__content {
     -ms-grid-columns: 1fr auto;
@@ -2127,6 +2277,10 @@ nav {
     -ms-grid-columns: auto 1fr auto auto auto;
         grid-template-columns: auto 1fr auto auto auto;
   }
+  .products__create__cardWrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 600px) {
@@ -2138,6 +2292,24 @@ nav {
     margin-top: 40px;
   }
   .products__titlebar--item:last-child {
+    position: fixed;
+    text-align: end;
+    top: 50px;
+    right: 0px;
+    background: white;
+    padding: 9px 15px;
+    width: 100%;
+    -webkit-box-shadow: 0 2px 15px rgba(35, 40, 47, 0.25), 0 0 0 1px rgba(167, 176, 190, 0.1);
+            box-shadow: 0 2px 15px rgba(35, 40, 47, 0.25), 0 0 0 1px rgba(167, 176, 190, 0.1);
+  }
+  .products__create__titlebar {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+  .products__create__titlebar--item:last-child {
     position: fixed;
     text-align: end;
     top: 50px;

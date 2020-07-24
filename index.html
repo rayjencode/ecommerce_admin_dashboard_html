@@ -2206,7 +2206,7 @@
                         </div>
                     </div>
 
-                    <div class="products__list">
+                    <div class="products__list hide-item">
                         <div
                             class="products__titlebar dflex justify-content-between align-items-center mt-2"
                         >
@@ -2516,7 +2516,241 @@
                         </div>
                     </div>
 
-                    <div class="product__create"></div>
+                    <div class="products__create">
+                        <div
+                            class="products__create__titlebar dflex justify-content-between align-items-center"
+                        >
+                            <div class="products__create__titlebar--item">
+                                <div class="breadcramb mt-3">
+                                    <i class="fas fa-angle-left mr-1"></i
+                                    >Products
+                                </div>
+                                <h1 class="my-1">Add Product</h1>
+                            </div>
+                            <div class="products__create__titlebar--item">
+                                <button class="btn btn-light">Discard</button>
+                                <button class="btn btn-secondary ml-1">
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="products__create__cardWrapper mt-2">
+                            <div class="products__create__main">
+                                <div
+                                    class="products__create__main--addInfo card py-2 px-2 bg-white"
+                                >
+                                    <p class="mb-1">Title</p>
+                                    <input
+                                        type="text"
+                                        placeholder="e.g. Short sleeve t-shirt"
+                                        class="input"
+                                    />
+
+                                    <p class="my-1">Description (optional)</p>
+                                    <textarea
+                                        cols="30"
+                                        rows="10"
+                                        class="textarea"
+                                    ></textarea>
+                                </div>
+                            </div>
+                            <div class="products__create__sidebar">
+                                <!-- Upload Image -->
+                                <div class="card py-2 px-2 bg-white">
+                                    <h3>Media</h3>
+                                    <form
+                                        class="products__create__sidebar--form mt-2"
+                                    >
+                                        <label
+                                            class="products__create__sidebar--form--label"
+                                            for="myfile"
+                                            >Add Image</label
+                                        >
+                                        <input
+                                            class="products__create__sidebar--form--input"
+                                            type="file"
+                                            id="myfile"
+                                            name="myfile"
+                                        />
+                                    </form>
+                                </div>
+
+                                <!-- Product Organization -->
+                                <div class="mt-2 card py-2 px-2 bg-white">
+                                    <h3>Organization</h3>
+
+                                    <!-- Product Type -->
+                                    <div class="my-3">
+                                        <p>Product Type</p>
+                                        <div
+                                            class="dflex justify-content-between align-items-center"
+                                        >
+                                            <input
+                                                class="inputAdd my-1"
+                                                type="text"
+                                                placeholder="e.g Shirts"
+                                            />
+                                            <button class="inputAdd__Btn my-1">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </div>
+
+                                        <select
+                                            class="inputSelect"
+                                            name=""
+                                            id=""
+                                        >
+                                            <option value="">Shirts</option>
+                                            <option value="">Appliace</option>
+                                            <option value="">Pants</option>
+                                            <option value="">Watch</option>
+                                            <option value="">Gadgets</option>
+                                            <option value="">Phone</option>
+                                        </select>
+                                    </div>
+                                    <hr />
+
+                                    <!-- Product Vendor -->
+                                    <div class="my-3">
+                                        <p>Vendor</p>
+                                        <div
+                                            class="dflex justify-content-between align-items-center"
+                                        >
+                                            <input
+                                                class="inputAdd my-1"
+                                                type="text"
+                                                placeholder="e.g Samsung"
+                                            />
+                                            <button class="inputAdd__Btn my-1">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </div>
+
+                                        <select
+                                            class="inputSelect"
+                                            name=""
+                                            id=""
+                                        >
+                                            <option value="">Samsung</option>
+                                            <option value="">Nokia</option>
+                                            <option value="">iPhone</option>
+                                            <option value="">Huawei</option>
+                                            <option value="">Nike</option>
+                                            <option value="">Addidas</option>
+                                        </select>
+                                    </div>
+                                    <hr />
+                                </div>
+
+                                <!--  Collections -->
+                                <div class="mt-2 card py-2 px-2 bg-white">
+                                    <h3>Collections</h3>
+
+                                    <div class="inputBrowse mt-3">
+                                        <i
+                                            class="inputBrowse__icon fas fa-search"
+                                        ></i>
+                                        <input
+                                            type="text"
+                                            placeholder="Search for collections"
+                                            class="inputBrowse__input"
+                                        />
+                                    </div>
+
+                                    <div class="mt-2">
+                                        <label class="container"
+                                            >Appliances
+                                            <input
+                                                type="checkbox"
+                                                checked="checked"
+                                            />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container"
+                                            >Furniture
+                                            <input
+                                                type="checkbox"
+                                                checked="checked"
+                                            />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container"
+                                            >Hardware Tools
+                                            <input
+                                                type="checkbox"
+                                                checked="checked"
+                                            />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container"
+                                            >Home Interior
+
+                                            <input
+                                                type="checkbox"
+                                                checked="checked"
+                                            />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container"
+                                            >Doors & Mouldings
+
+                                            <input
+                                                type="checkbox"
+                                                checked="checked"
+                                            />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container"
+                                            >Electrical
+
+                                            <input
+                                                type="checkbox"
+                                                checked="checked"
+                                            />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container"
+                                            >Paint & Sundries
+
+                                            <input
+                                                type="checkbox"
+                                                checked="checked"
+                                            />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container"
+                                            >Plumbing
+
+                                            <input
+                                                type="checkbox"
+                                                checked="checked"
+                                            />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container"
+                                            >Sanitary wares
+
+                                            <input
+                                                type="checkbox"
+                                                checked="checked"
+                                            />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container"
+                                            >Tiles
+
+                                            <input
+                                                type="checkbox"
+                                                checked="checked"
+                                            />
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- End Products -->
