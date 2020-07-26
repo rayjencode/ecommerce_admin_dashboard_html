@@ -1,4 +1,4 @@
-## E-commerce Admin Dashboard inpired from Shopify
+## E-commerce Admin Dashboard HTML5 inpired from Shopify
 
 ##### No Framework - Super Responsive built with CSS GRID
 
