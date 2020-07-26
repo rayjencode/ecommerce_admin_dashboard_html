@@ -43,6 +43,22 @@
             grid-template-columns: 1fr minmax(auto, 290px);
             grid-gap: 20px;
         }
+        &__main {
+            &--pricing {
+                &--col {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 20px;
+                }
+            }
+            &--inventory {
+                &--col {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 20px;
+                }
+            }
+        }
         &__sidebar {
             &--form {
                 border: 2px dashed $gray;

@@ -1512,7 +1512,7 @@ nav {
 }
 
 /* Customize the label (the container) */
-.container {
+.checkbox-container {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -1526,7 +1526,7 @@ nav {
 }
 
 /* Hide the browser's default checkbox */
-.container input {
+.checkbox-container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -1546,12 +1546,12 @@ nav {
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
+.checkbox-container:hover input ~ .checkmark {
   border: 1px solid #e0e0e0;
 }
 
 /* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
+.checkbox-container input:checked ~ .checkmark {
   border: 2px solid #5463c1;
 }
 
@@ -1563,12 +1563,12 @@ nav {
 }
 
 /* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
+.checkbox-container input:checked ~ .checkmark:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-.container .checkmark:after {
+.checkbox-container .checkmark:after {
   left: 6px;
   top: 2px;
   width: 5px;
@@ -2210,6 +2210,22 @@ nav {
   display: grid;
   -ms-grid-columns: 1fr minmax(auto, 290px);
       grid-template-columns: 1fr minmax(auto, 290px);
+  grid-gap: 20px;
+}
+
+.products__create__main--pricing--col {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.products__create__main--inventory--col {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
 
