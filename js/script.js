@@ -109,3 +109,37 @@ closeShowCapturePaymentModal.forEach((btn) => {
 });
 
 // End Capture Payment Btn
+
+// Variants Input Tags
+
+const variantOptionInput = document.querySelectorAll(
+    '.products__create__main--variants--col--optionValues--input'
+);
+const variantOptionTagsWrapper = document.querySelector(
+    '.products__create__main--variants--col--optionValues--wrapper'
+);
+
+// variantOptionInput.addEventListener('focus', () => {
+//     variantOptionTagsWrapper.style.border = '2px solid #5463c1';
+// });
+// variantOptionInput.addEventListener('blur', () => {
+//     variantOptionTagsWrapper.style.border = '';
+// });
+
+variantOptionInput.forEach((input) => {
+    input.addEventListener('focus', (e) => {
+        e.target.parentElement.parentElement.style.border = '2px solid #5463c1';
+    });
+});
+
+variantOptionInput.forEach((input) => {
+    input.addEventListener('blur', (e) => {
+        e.target.parentElement.parentElement.style.border = '';
+    });
+});
+
+// variantOptionInput.forEach((input) => {
+//     input.addEventListener('focus', () => {
+//         variantOptionTagsWrapper.style.border = '2px solid #5463c1';
+//     });
+// });
