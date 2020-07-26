@@ -118,11 +118,15 @@
                 grid-template-columns: 2fr 1fr;
                 grid-gap: 20px;
                 align-items: center;
+                border-bottom: 1px solid $border;
+                padding-bottom: 1.2rem;
             }
             &--item {
                 display: grid;
                 grid-template-columns: 20px 70px 1fr 15px;
                 align-items: center;
+
+                // border-bottom: 1px solid $border;
                 &--img {
                     width: 100%;
                 }

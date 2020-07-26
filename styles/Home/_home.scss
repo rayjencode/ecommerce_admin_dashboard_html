@@ -37,10 +37,13 @@
             display: grid;
             // grid-template-columns: 150px 1fr 80px 100px;
             grid-template-columns: 140px 1fr 80px 100px;
+            border-bottom: 1px solid $border;
+            padding-bottom: 1.2rem;
         }
         &--items {
             display: grid;
             grid-template-columns: 140px 1fr 80px 100px;
+            border-bottom: 1px solid $border;
             &:hover {
                 background: $gray100;
                 cursor: pointer;

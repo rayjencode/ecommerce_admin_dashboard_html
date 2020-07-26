@@ -125,7 +125,10 @@
     &__main {
         &--card {
             background: white;
-
+            &--trackInfo {
+                border-bottom: 1px solid $border;
+                padding-bottom: 1.2rem;
+            }
             &--item {
                 display: grid;
                 // grid-gap: 20px;
@@ -133,6 +136,9 @@
                 // grid-template-columns: repeat(auto-fit, minmax(100px, auto));
                 align-items: center;
                 // justify-items: center;
+
+                border-bottom: 1px solid $border;
+                padding: 1rem 0;
                 &:hover {
                     cursor: pointer;
                 }

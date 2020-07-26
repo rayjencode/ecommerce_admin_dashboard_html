@@ -51,6 +51,9 @@
     }
     &__list {
         &__heading {
+            // border-bottom: 1px solid $border;
+            // padding-bottom: 1.2rem;
+
             grid-template-columns: 80px 1fr 140px 120px 100px;
 
             @media (max-width: 768px) {
@@ -58,6 +61,13 @@
             }
         }
         &__item {
+            // background: $border;
+            // border-radius: 3px;
+            // padding: 7px;
+            // margin: 0 7px 7px 0;
+
+            border-bottom: 1px solid $border;
+
             grid-template-columns: 80px 1fr 140px 120px 100px;
             &--imgWrapper {
                 max-width: 45px;
