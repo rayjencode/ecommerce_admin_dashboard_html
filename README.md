@@ -14,3 +14,4 @@
 ![e-commerce admin product empty list](https://i.imgur.com/7STmgEh.png)
 ![e-commerce admin product list](https://i.imgur.com/inBm2a1.png)
 ![e-commerce admin create product](https://i.imgur.com/hZyVlAC.png)
+![e-commerce admin edit product](https://i.imgur.com/xq7uOo4.png)
