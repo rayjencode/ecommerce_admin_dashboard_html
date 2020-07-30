@@ -670,6 +670,14 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  color: #5463c1;
+}
+
 main {
   display: -ms-grid;
   display: grid;
@@ -2956,5 +2964,96 @@ nav {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.products__variant__edit {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.products__variant__edit--cardWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(auto, 290px) 1fr;
+      grid-template-columns: minmax(auto, 290px) 1fr;
+  grid-gap: 20px;
+}
+
+.products__variant__edit--sidebar--info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80px 1fr;
+      grid-template-columns: 80px 1fr;
+  grid-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products__variant__edit--sidebar--info--imgWrapper {
+  width: 80px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.products__variant__edit--sidebar--info--img {
+  width: 100%;
+}
+
+.products__variant__edit--sidebar--variants--item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45px 1fr;
+      grid-template-columns: 45px 1fr;
+  grid-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.products__variant__edit--sidebar--variants--item:hover {
+  background: #f8f7f7;
+}
+
+.products__variant__edit--sidebar--variants--item:active {
+  background: #5463c1;
+  color: white;
+}
+
+.products__variant__edit--sidebar--variants--item--imgWrapper {
+  width: 45px;
+  height: 45px;
+}
+
+.products__variant__edit--sidebar--variants--item--img {
+  width: 100%;
+}
+
+.products__variant__edit--main--options--wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 120px;
+      grid-template-columns: 1fr 120px;
+  grid-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products__variant__edit--main--options--upload {
+  text-align: center;
+}
+
+.products__variant__edit--main--options--upload--imgWrapper {
+  border: 2px dashed #e0e0e0;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.products__variant__edit--main--options--upload--img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
