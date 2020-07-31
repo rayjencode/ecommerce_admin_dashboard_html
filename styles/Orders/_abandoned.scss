@@ -1,0 +1,14 @@
+.abandoned {
+    &__heading {
+        grid-template-columns: repeat(5, 1fr) 100px;
+        @media (max-width: 600px) {
+            display: none;
+        }
+    }
+    &__item {
+        grid-template-columns: repeat(5, 1fr) 100px;
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+    }
+}

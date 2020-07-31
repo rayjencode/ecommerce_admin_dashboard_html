@@ -24,9 +24,15 @@
 
     &__heading {
         grid-template-columns: 1fr 100px 100px;
+        @media (max-width: 400px) {
+            display: none;
+        }
     }
     &__items {
         grid-template-columns: 1fr 100px 100px;
+        @media (max-width: 400px) {
+            grid-template-columns: 1fr;
+        }
     }
 
     // &__heading {

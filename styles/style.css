@@ -1632,9 +1632,22 @@ nav {
       grid-template-columns: 1fr 100px 100px;
 }
 
+@media (max-width: 400px) {
+  .customers__heading {
+    display: none;
+  }
+}
+
 .customers__items {
   -ms-grid-columns: 1fr 100px 100px;
       grid-template-columns: 1fr 100px 100px;
+}
+
+@media (max-width: 400px) {
+  .customers__items {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .home__cards {
@@ -1850,6 +1863,29 @@ nav {
   }
   .singleOrder__main--card--item--details {
     margin-top: 10px;
+  }
+}
+
+.abandoned__heading {
+  -ms-grid-columns: (1fr)[5] 100px;
+      grid-template-columns: repeat(5, 1fr) 100px;
+}
+
+@media (max-width: 600px) {
+  .abandoned__heading {
+    display: none;
+  }
+}
+
+.abandoned__item {
+  -ms-grid-columns: (1fr)[5] 100px;
+      grid-template-columns: repeat(5, 1fr) 100px;
+}
+
+@media (max-width: 768px) {
+  .abandoned__item {
+    -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
 
