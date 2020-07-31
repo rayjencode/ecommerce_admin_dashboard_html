@@ -2971,12 +2971,41 @@ nav {
   margin: 0 auto;
 }
 
+@media (max-width: 600px) {
+  .products__variant__edit__titlebar {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+  .products__variant__edit__titlebar--item:last-child {
+    position: fixed;
+    text-align: end;
+    top: 50px;
+    right: 0px;
+    background: white;
+    padding: 9px 15px;
+    width: 100%;
+    -webkit-box-shadow: 0 2px 15px rgba(35, 40, 47, 0.25), 0 0 0 1px rgba(167, 176, 190, 0.1);
+            box-shadow: 0 2px 15px rgba(35, 40, 47, 0.25), 0 0 0 1px rgba(167, 176, 190, 0.1);
+    z-index: 1;
+  }
+}
+
 .products__variant__edit--cardWrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: minmax(auto, 290px) 1fr;
       grid-template-columns: minmax(auto, 290px) 1fr;
   grid-gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .products__variant__edit--cardWrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .products__variant__edit--sidebar--info {
@@ -3010,7 +3039,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 5px 20px;
   border-top: 1px solid #e0e0e0;
 }
 
@@ -3043,6 +3072,13 @@ nav {
           align-items: center;
 }
 
+@media (max-width: 468px) {
+  .products__variant__edit--main--options--wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .products__variant__edit--main--options--upload {
   text-align: center;
 }
@@ -3055,5 +3091,35 @@ nav {
 
 .products__variant__edit--main--options--upload--img {
   width: 100%;
+}
+
+.products__variant__edit--main--pricing--inputWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@media (max-width: 468px) {
+  .products__variant__edit--main--pricing--inputWrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.products__variant__edit--main--inventory--inputWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@media (max-width: 468px) {
+  .products__variant__edit--main--inventory--inputWrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=style.css.map */

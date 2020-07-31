@@ -728,10 +728,38 @@
         &__edit {
             max-width: 900px;
             margin: 0 auto;
+
+            &__titlebar {
+                @media (max-width: 600px) {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    margin-top: 40px;
+                    &--item {
+                        &:last-child {
+                            position: fixed;
+                            text-align: end;
+                            top: 50px;
+                            right: 0px;
+
+                            background: white;
+                            padding: 9px 15px;
+                            width: 100%;
+                            box-shadow: $box-shadow-200;
+                            // bottom: 1rem;
+                            z-index: 1;
+                        }
+                    }
+                }
+            }
+
             &--cardWrapper {
                 display: grid;
                 grid-template-columns: minmax(auto, 290px) 1fr;
                 grid-gap: 20px;
+
+                @media (max-width: 768px) {
+                    grid-template-columns: 1fr;
+                }
             }
 
             &--sidebar {
@@ -758,7 +786,7 @@
                         grid-gap: 20px;
                         align-items: center;
                         cursor: pointer;
-                        padding: 10px 20px;
+                        padding: 5px 20px;
                         border-top: 1px solid $border;
                         &:hover {
                             background: $gray300;
@@ -784,6 +812,10 @@
                         grid-template-columns: 1fr 120px;
                         grid-gap: 20px;
                         align-items: center;
+
+                        @media (max-width: 468px) {
+                            grid-template-columns: 1fr;
+                        }
                     }
                     &--upload {
                         text-align: center;
@@ -802,6 +834,26 @@
                         }
                         &--img {
                             width: 100%;
+                        }
+                    }
+                }
+                &--pricing {
+                    &--inputWrapper {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: 20px;
+                        @media (max-width: 468px) {
+                            grid-template-columns: 1fr;
+                        }
+                    }
+                }
+                &--inventory {
+                    &--inputWrapper {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: 20px;
+                        @media (max-width: 468px) {
+                            grid-template-columns: 1fr;
                         }
                     }
                 }
