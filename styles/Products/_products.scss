@@ -1,7 +1,7 @@
 .products {
     // max-width: 968px;
     // margin: 0 auto;
-    height: 100vh;
+    // height: 100vh;
     &__titlebar {
         @media (max-width: 600px) {
             display: grid;
@@ -778,8 +778,6 @@
                     }
                 }
                 &--variants {
-                    &--list {
-                    }
                     &--item {
                         display: grid;
                         grid-template-columns: 45px 1fr;
@@ -791,7 +789,9 @@
                         &:hover {
                             background: $gray300;
                         }
-                        &:active {
+                        &:active,
+                        &:focus,
+                        &:link {
                             background: $primary200;
                             color: white;
                         }
@@ -801,6 +801,10 @@
                         }
                         &--img {
                             width: 100%;
+                        }
+                        &--active {
+                            background: $primary200;
+                            color: white;
                         }
                     }
                 }

@@ -1,6 +1,10 @@
 .paginate {
     width: 200px;
     margin-left: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 30px;
+
     &__icon {
         cursor: pointer;
         opacity: 0.7;

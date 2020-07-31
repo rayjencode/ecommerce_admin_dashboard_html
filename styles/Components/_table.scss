@@ -3,7 +3,8 @@
 
     &--filter {
         border-bottom: 1px solid $border;
-        padding-bottom: 1.4rem;
+        // padding-bottom: 1.4rem;
+        padding: 20px 30px;
         &--link {
             margin-right: 1rem;
             &:hover {
@@ -35,6 +36,7 @@
     }
 
     &--search {
+        padding: 0 30px;
         display: grid;
         grid-template-columns: minmax(150px, auto) minmax(180px, 1fr);
         &--wrapper {
@@ -88,6 +90,7 @@
         }
     }
     &--heading {
+        padding: 0 30px;
         gap: 10px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -100,6 +103,7 @@
         padding-bottom: 1.2rem;
     }
     &--items {
+        padding: 10px 30px !important;
         gap: 10px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -117,7 +121,7 @@
             font-weight: 500;
         }
         &:hover {
-            background: $gray100;
+            background: $gray300;
             cursor: pointer;
         }
     }
